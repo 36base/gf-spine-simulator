@@ -454,7 +454,12 @@ var gvHandler={
 		alert("복사되었으니 주소창에 붙여넣기 하세요!")
 	},
 	savePng:function(gameview){
-		download_png(gameview.renderer,gameview.stage,"screenshot");
+		if(confirm("이미지는 하단에 출력됩니다. 이미지를 마우스 오른쪽 버튼으로 클릭해 저장할 수 있습니다. 모바일은 이미지를 길게 눌러주세요.")){
+	//     var renderTexture = new PIXI.RenderTexture(gameview.renderer, 1920, 1080);
+	//     renderTexture.renderWebGL(gameview.stage);
+	//      var canvas = renderTexture.getCanvas();
+			$('#saveImage').html().show();
+		}
 	}
 };
 function copyToClipboard(val){
@@ -465,12 +470,15 @@ function copyToClipboard(val){
 	document.execCommand('copy');
 	document.body.removeChild(t)
 }
-game.setGameviewHandler(gvHandler);
-function download_png(renderer, sprite, fileName) {
-	renderer.extract.canvas(sprite).toBlob(function(b){
-		var a=document.createElement("a");
-		document.body.append(a);
-		a.download=fileName+".png",a.href=URL.createObjectURL(b);
-		;a.click(),a.remove()
-	},"image/png");
-};
+//game.setGameviewHandler(gvHandler);
+//
+//function download_sprite_as_png(renderer, sprite, fileName) {
+//	renderer.extract.canvas(sprite).toBlob(function(b){
+//		var a = document.createElement('a');
+//		document.body.append(a);
+//		a.download = fileName;
+//		a.href = URL.createObjectURL(b);
+//		a.click();
+//		a.remove();
+//	}, 'image/png');
+//}
