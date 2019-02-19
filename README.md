@@ -11,7 +11,14 @@
  * 통합 미리보기 URL (중국어) https://gf.fws.tw/db/guns/simulator/
  * 수정된 변경본 URL (중국어) https://gf.fws.tw/gf-spine-simulator/
  * 통합 미리보기 URL (한국어 번역) https://girlsfrontline.kr/db/simulator/
- * 커스텀 버전   URL (한국어) 을 다시 재 Fork 처리 했습니다. https://github.com/SFDB-Team/gf-spine-simulator/
+  * 커스텀 버전   URL (한국어) 을 다시 재 Fork 처리 했습니다. https://ergo9ine.github.io/gf-spine-simulator/
+
+
+## 종속성 문제를 위해 bower 설치 필요 
+
+```
+bower install
+```
 
 ## 통합기능
 
@@ -21,9 +28,8 @@
 
 ## 수정된 버전의 주요 기능
  
- * Vue.js 포팅
- * Bootstrap 4.3.1 업데이트
- * pixijs 4.8.6 업데이트
+ * Bootstrap 4.2.1 업데이트
+ * pixijs 4.8.5 업데이트
  * 캐릭터 이름 한국어화
  * 개별 정지 버튼 추가
  * 배경 추가

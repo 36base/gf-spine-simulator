@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>36베이스 - 소녀전선 숙소/치비 SD시뮬레이터</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/css.css">
 <!-- 36Base 용 Original Source -->
 <link href="../../data/img/g36/32bnonclear.png" rel="apple-touch-icon" />
@@ -22,77 +22,99 @@
 <!-- IE alert -->
 <script>
 var userAgent = navigator.userAgent.toLowerCase(); //빠른 구별 위해 소문자로만 출력
-if(userAgent.indexOf('trident')>-1){alert("Internet Explorer 는 WebGL을 지원하지 않습니다.\nMicrosoft Edge, Google Chrome, Mozilla Firefox, Opera  를 이용해 주세요.")};
+//document.write(userAgent);
+if(userAgent.indexOf('trident')>-1){alert("Internet Explorer 는 WebGL을 지원하지 않습니다.\nMicrosoft Edge, Google Chrome, Mozilla Firefox 를 이용해 주세요.")};
 </script>
 <!-- EXIT alert -->
-<script>window.onbeforeunload=e=>"사이트에서 나가시겠습니까?\n변경사항이 저장되지 않습니다."</script>
+<script>
+window.onbeforeunload=function(e){return "사이트에서 나가시겠습니까?\n변경사항이 저장되지 않습니다.";
+</script>
 </head>
 <body>
-<div id="app" class="Container p-0 mx-auto row no-gutters">
-<header class="mx-auto my-3 d-none d-md-block"><h2>Girls' FrontLine Spine Simulator</h2></header>
+<div class="Container p-0 mx-auto row no-gutters">
+<header class="mx-auto my-3 d-none d-md-block"><h2>소녀전선 숙소/치비 SD시뮬레이터</h2></header>
 <nav class="controlUi my-3 my-md-1 row no-gutters">
 <div class="preCanvas Canvas col-4"></div>
 <div class="preUI mx-3 col">
-<form-sm txt="인형" id="doll"></form-sm>
-<form-sm txt="스킨" id="skin"></form-sm>
-<form-sm txt="모션" id="motion"></form-sm>
+<div class="form-group preSelectCharacter">
+<label>인형</label>
+<select class="custom-select"></select>
+</div>
+<div class="form-group preSelectSkin">
+<label>스킨<small class="text-muted">(R : 숙소 모델링)</small></label>
+<select class="custom-select"></select>
+</div>
+<div class="form-group preSelectAnimation">
+<label>모션</label>
+<select class="custom-select"></select>
+</div>
 <div class="text-center">
-	<div class="btn-group btn-group-sm">
-		<button type="button" class="btn btn-primary" @click="AddRole">투입</button>
-		<button type="button" class="btn btn-secondary" @click="StopRole">정지</button>
-	</div>
+<div class="btn-group btn-group-sm">
+<button type="button" class="btn btn-primary preAddRole">투입</button>
+<button type="button" class="btn btn-secondary preStopRole">정지</button>
+</div>
 </div>
 </div>
 <div class="gameview col-5">
 <div class="charOptions">
-<char-op txt="인형" id="GameDoll"></char-op>
-<char-op txt="모션" id="GameMotion"></char-op>
-<char-op txt="X축" id="SelectposX"></char-op>
-<char-op txt="Y축" id="SelectposY"></char-op>
-<char-op txt="인형크기" id="Selectscale"></char-op>
+<div class="gameSelectCharacter input-group mb-1">
+<div class="input-group-prepend"><span class="input-group-text">인형선택</span></div>
+<select class="custom-select"></select>
+</div>
+<div class="gameSelectAnimation input-group mb-1">
+<div class="input-group-prepend"><span class="input-group-text">모션</span></div>
+<select class="custom-select"></select>
+</div>
+<div class="gameSelectposX input-group mb-1">
+<div class="input-group-prepend"><span class="input-group-text">X축</span></div>
+<input type="range" class="custom-range col p-0" min="0" max="800">
+</div>
+<div class="gameSelectposY input-group mb-1">
+<div class="input-group-prepend"><span class="input-group-text">Y축</span></div>
+<input type="range" class="custom-range col p-0" min="0" max="800">
+</div>
+<div class="gameSelectscale input-group mb-1">
+<div class="input-group-prepend"><span class="input-group-text">인형크기</span></div>
+<input type="range" class="custom-range col p-0" min="200" max="3000">
+</div>
 <div class="text-center">
-	<div class="btn-group btn-group-sm">
-		<button id="TimeStop" type="button" class="btn btn-secondary btn-sm" @click="TimeStop">정지</button>
-		<button type="button" class="btn btn-primary btn-sm" @click="TurnRole">좌우반전</button>
-		<button type="button" class="btn btn-secondary btn-sm" @click="RemoveRole">인형제거</button>
-	</div>
+<div class="btn-group btn-group-sm">
+<button type="button" class="btn btn-secondary btn-sm gameTimestop">정지</button>
+<button type="button" class="btn btn-primary btn-sm gameTurnRole">좌우반전</button>
+<button type="button" class="btn btn-secondary btn-sm gameRemoveRole">인형제거</button>
+</div>
 </div>
 </div>
 </div>
 </nav>
-<div class="custom-control custom-checkbox">
-	<input type="checkbox" id="customCheck" class="custom-control-input" v-model="isShowFPS">
-	<label class="custom-control-label" for="customCheck">FPS 수치 출력</label>
-</div>
+<div class="gameShowFPS canvasFps custom-control custom-checkbox"><input type="checkbox" checked="checked" id="customCheck" class="custom-control-input"><label class="custom-control-label" for="customCheck">FPS 수치 출력</label></div>
 <div class="gameCanvas Canvas mx-auto"></div>
 <nav class="convasControl clearfix col-12 mt-2">
 <div class="gameSelectBackground form-inline float-left">
 <label>배경화면</label>
-<select class="custom-select-sm" v-model="SelectBackground" @input="changeBackground">
-	<option value="0">없음</option>
-	<option v-for="(img,index) in background" :value="index+1">{{ img }}</option>
-</select>
+<select class="custom-select-sm"></select>
 </div>
 <div class="btn-group btn-group-sm float-right">
-<button type="button" class="btn btn-secondary" @click="RemoveAllRole">인형 모두제거</button>
-<button type="button" class="btn btn-secondary" @click="StopRole">인형 모션정지</button>
-<button type="button" class="btn btn-primary" @click="savePng">이미지 저장하기</button>
-<button type="button" class="btn btn-primary" @click="saveStage">주소 복사</button>
+<button type="button" class="btn btn-secondary gameRemoveAllRole">인형 모두제거</button>
+<button type="button" class="btn btn-secondary gameStopRole">인형 모션정지</button>
+<button type="button" class="btn btn-primary gameSavePng">이미지 저장하기</button>
+<button type="button" class="btn btn-primary gameSaveStage">주소 복사</button>
 </div>
 </nav>
 <img id="saveImage" width="100%">
 <footer class="mx-auto">
-<p class="text-muted"><small>이것은 단순한 소녀전선 모션 시뮬레이터 이며, 실제 게임과는 다를 수 있습니다.</small><br>
-모든 이미지 파일에 대한 저작권은 게임 개발사인 <a href="http://gf.txwy.tw/" target="_blank">天下網遊</a> 에 있습니다.<br>
-Orignal Simulator : <a href="https://github.com/cullus" target="_blank">cullus</a><a href="https://github.com/cullus/gfSpinePiXi" target="_blank">gfSpinePiXi</a><br>
-Original GitHub : <a href="https://github.com/wsmwason/gf-spine-simulator" target="_blank">wsmwason/gf-spine-simulator [업데이트 오리지널]</a><br>
-Korean translate GitHub : <a href="https://github.com/kjm1922/gf-spine-simulator" target="_blank">kjm1922/gf-spine-simulator [한글화 적용]</a><br>
-More Modifty : <a href="https://github.com/ergo9ine">ergo9ine</a><a href="https://github.com/SFDB-Team/gf-spine-simulator" target="_blank">/gf-spine-simulator [커스텀]</a></p>
+<p><small>이것은 단순한 소녀전선 모션 시뮬레이터 이며, 실제 게임과는 다를 수 있습니다.</small></p>
+<p>모든 이미지 파일에 대한 저작권은 게임 개발사인 <a href="http://gf.txwy.tw/" target="_blank">天下網遊</a> 에 있습니다.</p>
+<p>Orignal Simulator : <a href="https://github.com/cullus" target="_blank">cullus</a><a href="https://github.com/cullus/gfSpinePiXi" target="_blank">gfSpinePiXi</a></p>
+<p>Original GitHub : <a href="https://github.com/wsmwason/gf-spine-simulator" target="_blank">wsmwason/gf-spine-simulator [업데이트 오리지널]</a></p>
+<p>Korean translate GitHub : <a href="https://github.com/kjm1922/gf-spine-simulator" target="_blank">kjm1922/gf-spine-simulator [한글화 적용]</a></p>
+<p>More Modifty : <a href="https://github.com/ergo9ine">ergo9ine</a><a href="https://github.com/SFDB-Team/gf-spine-simulator" target="_blank">/gf-spine-simulator [커스텀]</a></p>
 </footer>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/pixi.js@4.8.6/dist/pixi.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pixi.js@4.8.5/dist/pixi.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pixi-spine@1.0.10/bin/pixi-spine.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.min.js"></script>
 <script src="js/girlsData.js"></script>
 <script src="js/spine-data.js"></script>
 <script src="js/game.js"></script>

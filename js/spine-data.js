@@ -454,11 +454,10 @@ SkeletonBinary.prototype={
 						var tlflip=this.readBoolean();
 						timeline[frameIndex]={};
 						timeline[frameIndex].time=tltime;
-						if(timelineType ==5){
-							timeline[frameIndex].x=tlflip
-						}else{
-							timeline[frameIndex].y=tlflip
-						}
+						if(timelineType ==5)
+							timeline[frameIndex].x=tlflip;
+						else
+							timeline[frameIndex].y=tlflip;
 					}
 					if(timelineType==5){
 						boneMap.flipX=timeline;
@@ -601,8 +600,8 @@ SkeletonBinary.prototype={
 		return animation;
 	}
 }
-var BlendMode=["normal","additive","multiply","screen"],
-	AttachmentType=["region","boundingbox","mesh","skinnedmesh"];
+var BlendMode=["normal","additive","multiply","screen"];
+var AttachmentType=["region","boundingbox","mesh","skinnedmesh"];
 function Girls(basePath){
 	this.basePath=basePath;
 	this.loader=new PIXI.loaders.Loader(this.basePath);
@@ -611,138 +610,141 @@ Girls.prototype={
 	spineData:{},
 	loadCache:{},
 	load:function(name,skin,v){
-		if(!girlsData[name]||!girlsData[name][skin]){
-			return
-		};
+		if(!girlsData[name]||!girlsData[name][skin])
+			return ;
 		if(!this.spineData[name]||!this.spineData[name][skin]){
-			var girlSkin=girlsData[name][skin],
-				baseName=`${name}-${skin}`,
-				skelpath=`${name}/${skin}.skel`,
-				atlaspath,pngpath,jsonpath;
-			if(!girlSkin["atlas"]){
-				atlaspath=`${name}/${skin}.atlas`
+			var girlSkin=girlsData[name][skin];
+			var baseName=name+"-"+skin;
+			var skelpath=name+"/"+skin+".skel";
+			var atlaspath;
+			var pngpath;
+			var jsonpath;
+			if($.isEmptyObject(girlSkin["atlas"])){
+				atlaspath=name+"/"+skin+".atlas";
 			}else{
-				atlaspath=`${name}/${girlSkin["atlas"]}.atlas`
+				atlaspath=name+"/"+girlSkin["atlas"]+".atlas";
 			}
-			if(!girlSkin["png"]){
-				pngpath=`${name}/${skin}.png`
+			if($.isEmptyObject(girlSkin["png"])){
+				pngpath=name+"/"+skin+".png";
 			}else{
-				pngpath=`${name}/${girlSkin["png"]}.png`
+				pngpath=name+"/"+girlSkin["png"]+".png";
 			}
-			this.loader.view=v,
+			this.loader.view=v;
 			this.loader.next=baseName;
-			if(!girlSkin["json"]){
-				this.loader.add(`${baseName}-skel`,skelpath,{"xhrType":"arraybuffer","metadata":{"type":"skel","name":name,"skin":skin}});
+			if($.isEmptyObject(girlSkin["json"])){
+				this.loader.add(baseName+"-skel",skelpath,{"xhrType":"arraybuffer","metadata":{"type":"skel","name":name,"skin":skin}});
 			}else{
-				jsonpath=`${name}/${girlSkin["json"]}`;
-				this.loader.add(`${baseName}-json`,jsonpath,{"metadata":{"type":"text","name":name,"skin":skin}});
+				jsonpath=name+"/"+girlSkin["json"];
+				this.loader.add(baseName+"-json",jsonpath,{"metadata":{"type":"text","name":name,"skin":skin}});
 			}
 			this.loader.add(baseName+"-atlas",atlaspath,{"metadata":{"type":"atlas"}});
 			this.loader.add(baseName+"-png",pngpath,{"metadata":{"type":"png"}});
 			this.loader.load((loader,resources)=>{
-				var rawSkeletonData,rawAtlasData,rawPngData,
-					skel=new SkeletonBinary();
-				if(!resources[loader.next+"-json"]){
-					name=resources[loader.next+"-skel"].metadata.name,
-					skin=resources[loader.next+"-skel"].metadata.skin,
+				var rawSkeletonData,rawAtlasData,rawPngData;
+				var skel=new SkeletonBinary();
+				if($.isEmptyObject(resources[loader.next+"-json"])){
+					name=resources[loader.next+"-skel"].metadata.name;
+					skin=resources[loader.next+"-skel"].metadata.skin;
 					skel.data=new Uint8Array(resources[loader.next+"-skel"].data);
 					skel.initJson();
-					rawSkeletonData=skel.json
+					rawSkeletonData=skel.json;
 				}else{
-					name=resources[loader.next+"-json"].metadata.name,
-					skin=resources[loader.next+"-json"].metadata.skin,
-					rawSkeletonData=JSON.parse(resources[loader.next+"-json"].data)
+					name=resources[loader.next+"-json"].metadata.name;
+					skin=resources[loader.next+"-json"].metadata.skin;
+					rawSkeletonData=JSON.parse(resources[loader.next+"-json"].data);
 				}
-				rawAtlasData=resources[loader.next+"-atlas"].data,
+				rawAtlasData=resources[loader.next+"-atlas"].data;
 				rawPngData=resources[loader.next+"-png"].data;
 				var spineAtlas=new PIXI.spine.SpineRuntime.Atlas(rawAtlasData,function(line,callback,pngData=rawPngData){
-					callback(new PIXI.BaseTexture(pngData))
+					callback(new PIXI.BaseTexture(pngData));
 				});
-				var spineAtlasParser=new PIXI.spine.SpineRuntime.AtlasAttachmentParser(spineAtlas),
-					spineJsonParser=new PIXI.spine.SpineRuntime.SkeletonJsonParser(spineAtlasParser),
-					skeletonData=spineJsonParser.readSkeletonData(rawSkeletonData,skin);
-				skeletonData.code=name,
-				skeletonData.skin=skin,
-				this.spineData[name]=this.spineData[name]||{},
+				var spineAtlasParser=new PIXI.spine.SpineRuntime.AtlasAttachmentParser(spineAtlas);
+				var spineJsonParser=new PIXI.spine.SpineRuntime.SkeletonJsonParser(spineAtlasParser);
+				var skeletonData=spineJsonParser.readSkeletonData(rawSkeletonData,skin);
+				skeletonData.code=name;
+				skeletonData.skin=skin;
+				this.spineData[name]=this.spineData[name]||{};
 				this.spineData[name][skin]=skeletonData;
-				v.changeCanvas(skeletonData);
+				loader.view.changeCanvas(skeletonData);
 			});
 		}else{
-			v.changeCanvas(this.spineData[name][skin])
+			v.changeCanvas(this.spineData[name][skin]);
 		}
 	},
 	loadAsync:function(name,skin,v){
 		console.log('Girls.loadAsync '+name+':'+skin);
 		if(!girlsData[name]||!girlsData[name][skin]){
-			return
-		};
+			return;
+		}
 		if(this.loadCache[name] && this.loadCache[name][skin]){
-			return
-		};
+			return;
+		}
 		this.loadCache[name]=this.loadCache[name]||{};
 		this.loadCache[name][skin]=true;
 		if(!this.spineData[name]||!this.spineData[name][skin]){
-			var girlSkin=girlsData[name][skin],
-				baseName=name+"-"+skin,
-				skelpath=name+"/"+skin+".skel",
-				atlaspath,pngpath,jsonpath;
-			if(!girlSkin["atlas"]){
-				atlaspath=name+"/"+skin+".atlas"
+			var girlSkin=girlsData[name][skin];
+			var baseName=name+"-"+skin;
+			var skelpath=name+"/"+skin+".skel";
+			var atlaspath;
+			var pngpath;
+			var jsonpath;
+			if($.isEmptyObject(girlSkin["atlas"])){
+				atlaspath=name+"/"+skin+".atlas";
 			}else{
-				atlaspath=name+"/"+girlSkin["atlas"]+".atlas"
+				atlaspath=name+"/"+girlSkin["atlas"]+".atlas";
 			}
-			if(!girlSkin["png"]){
-				pngpath=name+"/"+skin+".png"
+			if($.isEmptyObject(girlSkin["png"])){
+				pngpath=name+"/"+skin+".png";
 			}else{
-				pngpath=name+"/"+girlSkin["png"]+".png"
+				pngpath=name+"/"+girlSkin["png"]+".png";
 			}
 			this.loader.view=v;
 			this.loader.next=baseName;
-			if(!girlSkin["json"]){
+			if($.isEmptyObject(girlSkin["json"])){
 				this.loader.add(baseName+"-skel",skelpath,{"xhrType":"arraybuffer","metadata":{"type":"skel","name":name,"skin":skin}});
 			}else{
 				jsonpath=name+"/"+girlSkin["json"];
-				this.loader.add(baseName+"-json",jsonpath,{"metadata":{"type":"text","name":name,"skin":skin}})
+				this.loader.add(baseName+"-json",jsonpath,{"metadata":{"type":"text","name":name,"skin":skin}});
 			}
 			this.loader.add(baseName+"-atlas",atlaspath,{"metadata":{"type":"atlas"}});
 			this.loader.add(baseName+"-png",pngpath,{"metadata":{"type":"png"}});
 			this.loader.on('progress',function (){
-				console.log('loading...')
-			})
+				console.log('loading...');
+			});
 		}else{
-			v.loadToStage(this.spineData[name][skin])
+			v.loadToStage(this.spineData[name][skin]);
 		}
 	},
 	loadAll:function(defaultStageData){
 		this.loader.load((loader,resources)=>{
 			var rawSkeletonData,rawAtlasData,rawPngData;
 			for (i in defaultStageData){
-			var role=defaultStageData[i],
-				resName=role.name+"-"+role.skin,
-				skel=new SkeletonBinary();
-				if(!resources[resName+"-json"]){
+			var role=defaultStageData[i];
+			var resName=role.name+"-"+role.skin;
+			var skel=new SkeletonBinary();
+				if($.isEmptyObject(resources[resName+"-json"])){
 					name=resources[resName+"-skel"].metadata.name;
 					skin=resources[resName+"-skel"].metadata.skin;
 					skel.data=new Uint8Array(resources[resName+"-skel"].data);
 					skel.initJson();
-					rawSkeletonData=skel.json
+					rawSkeletonData=skel.json;
 				}else{
 					name=resources[resName+"-json"].metadata.name;
 					skin=resources[resName+"-json"].metadata.skin;
-					rawSkeletonData=JSON.parse(resources[resName+"-json"].data)
+					rawSkeletonData=JSON.parse(resources[resName+"-json"].data);
 				}
-				rawAtlasData=resources[resName+"-atlas"].data;
-				rawPngData=resources[resName+"-png"].data;
-				var spineAtlas=new PIXI.spine.SpineRuntime.Atlas(rawAtlasData,function(line,callback,pngData=rawPngData){
-					callback(new PIXI.BaseTexture(pngData))
-				});
-				var spineAtlasParser=new PIXI.spine.SpineRuntime.AtlasAttachmentParser(spineAtlas),
-					spineJsonParser=new PIXI.spine.SpineRuntime.SkeletonJsonParser(spineAtlasParser),
-					skeletonData=spineJsonParser.readSkeletonData(rawSkeletonData,role.skin);
-				this.spineData[name]=this.spineData[name]||{};
-				this.spineData[name][skin]=skeletonData
-			};
-			app.loadToStage(defaultStageData,this.spineData)
-		})
+			rawAtlasData=resources[resName+"-atlas"].data;
+			rawPngData=resources[resName+"-png"].data;
+			var spineAtlas=new PIXI.spine.SpineRuntime.Atlas(rawAtlasData,function(line,callback,pngData=rawPngData){
+				callback(new PIXI.BaseTexture(pngData));
+			});
+			var spineAtlasParser=new PIXI.spine.SpineRuntime.AtlasAttachmentParser(spineAtlas);
+			var spineJsonParser=new PIXI.spine.SpineRuntime.SkeletonJsonParser(spineAtlasParser);
+			var skeletonData=spineJsonParser.readSkeletonData(rawSkeletonData,role.skin);
+			this.spineData[name]=this.spineData[name]||{};
+			this.spineData[name][skin]=skeletonData;
+			}
+			loader.view.loadToStage(defaultStageData,this.spineData);
+		});
 	}
 }
