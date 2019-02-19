@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>36베이스 - 소녀전선 숙소/치비 SD시뮬레이터</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/css.css">
+	<meta charset="UTF-8">
+	<title>36베이스 - 소녀전선 숙소/치비 SD시뮬레이터</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/css.css">
 <!-- 36Base 용 Original Source -->
 	<link href="../../data/img/g36/32bnonclear.png" rel="apple-touch-icon" />
     <link href="../../data/img/g36/128bnonclear.png" rel="apple-touch-icon" sizes="128x128" />
@@ -13,27 +13,29 @@
     <link href="../../data/img/g36/128bnonclear.png" rel="icon" sizes="128x128" />
     <link rel="shortcut icon" type="image/x-icon" href="../../data/img/g36/32bnonclear.png">
 <!-- 36Base 용 Original Source -->
+
 <meta name="keywords" content="소녀전선,소전,GLF,girls'frontline,db,database,디비,데이터베이스,시뮬레이터,simulator">
-<!-- 36Base 용 Original Source -->
 <meta property="og:title" content="36베이스 - 소녀전선 숙소/치비 SD시뮬레이터">
 <meta property="og:type" content="website">
 <meta property="og:description" content="36베이스 - 소녀전선 숙소/치비 SD시뮬레이터">
-<!-- 36Base 용 Original Source -->
 <!-- IE alert -->
 <script>
 var userAgent = navigator.userAgent.toLowerCase(); //빠른 구별 위해 소문자로만 출력
 //document.write(userAgent);
 if(userAgent.indexOf('trident')>-1){alert("Internet Explorer 는 WebGL을 지원하지 않습니다.\nMicrosoft Edge, Google Chrome, Mozilla Firefox 를 이용해 주세요.")};
 </script>
+
 <!-- EXIT alert -->
 <script>
-window.onbeforeunload=function(e){return "사이트에서 나가시겠습니까?\n변경사항이 저장되지 않습니다.";
+window.onbeforeunload = function(e) {
+        return "사이트에서 나가시겠습니까?\n변경사항이 저장되지 않습니다.";
 </script>
+
 </head>
 <body>
-<div class="Container p-0 mx-auto row no-gutters">
+<div class="Container p-0 mx-auto row">
 <header class="mx-auto my-3 d-none d-md-block"><h2>소녀전선 숙소/치비 SD시뮬레이터</h2></header>
-<nav class="controlUi my-3 my-md-1 row no-gutters">
+<nav class="controlUi my-3 my-md-1 row no-gutters col-12 p-0">
 <div class="preCanvas Canvas col-4"></div>
 <div class="preUI mx-3 col">
 <div class="form-group preSelectCharacter">
@@ -89,8 +91,8 @@ window.onbeforeunload=function(e){return "사이트에서 나가시겠습니까?
 </nav>
 <div class="gameShowFPS canvasFps custom-control custom-checkbox"><input type="checkbox" checked="checked" id="customCheck" class="custom-control-input"><label class="custom-control-label" for="customCheck">FPS 수치 출력</label></div>
 <div class="gameCanvas Canvas mx-auto"></div>
-<nav class="convasControl clearfix col-12 mt-2">
-<div class="gameSelectBackground form-inline float-left">
+<nav class="convasControl clearfix col-12 p-0 mt-2">
+<div class="gameSelectBackground form-inline float-left m-0">
 <label>배경화면</label>
 <select class="custom-select-sm"></select>
 </div>
@@ -98,22 +100,25 @@ window.onbeforeunload=function(e){return "사이트에서 나가시겠습니까?
 <button type="button" class="btn btn-secondary gameRemoveAllRole">인형 모두제거</button>
 <button type="button" class="btn btn-secondary gameStopRole">인형 모션정지</button>
 <button type="button" class="btn btn-primary gameSavePng">이미지 저장하기</button>
+<!--
+개선 작업 예정 2018.09.21
 <button type="button" class="btn btn-primary gameSaveStage">주소 복사</button>
+-->
 </div>
 </nav>
 <img id="saveImage" width="100%">
 <footer class="mx-auto">
-<p><small>이것은 단순한 소녀전선 모션 시뮬레이터 이며, 실제 게임과는 다를 수 있습니다.</small></p>
-<p>모든 이미지 파일에 대한 저작권은 게임 개발사인 <a href="http://gf.txwy.tw/" target="_blank">天下網遊</a> 에 있습니다.</p>
-<p>Orignal Simulator : <a href="https://github.com/cullus" target="_blank">cullus</a><a href="https://github.com/cullus/gfSpinePiXi" target="_blank">gfSpinePiXi</a></p>
-<p>Original GitHub : <a href="https://github.com/wsmwason/gf-spine-simulator" target="_blank">wsmwason/gf-spine-simulator [업데이트 오리지널]</a></p>
-<p>Korean translate GitHub : <a href="https://github.com/kjm1922/gf-spine-simulator" target="_blank">kjm1922/gf-spine-simulator [한글화 적용]</a></p>
-<p>More Modifty : <a href="https://github.com/ergo9ine">ergo9ine</a><a href="https://github.com/SFDB-Team/gf-spine-simulator" target="_blank">/gf-spine-simulator [커스텀]</a></p>
+<p class="text-muted"><small>이것은 단순한 소녀전선 모션 시뮬레이터 이며, 실제 게임과는 다를 수 있습니다.</small></p>
+<p class="text-muted">모든 이미지 파일에 대한 저작권은 게임 개발사인 <a href="http://gf.txwy.tw/" target="_blank">天下網遊</a> 에 있습니다.</p>
+<p class="text-muted">Orignal Simulator : <a href="https://github.com/cullus" target="_blank">cullus</a><a href="https://github.com/cullus/gfSpinePiXi" target="_blank">gfSpinePiXi</a></p>
+<p class="text-muted">Original GitHub : <a href="https://github.com/wsmwason/gf-spine-simulator" target="_blank">wsmwason/gf-spine-simulator [업데이트 오리지널]</a></p>
+<p class="text-muted">Korean translate GitHub : <a href="https://github.com/kjm1922/gf-spine-simulator" target="_blank">kjm1922/gf-spine-simulator [한글화 적용]</a></p>
+<p class="text-muted">More Modifty : <a href="https://github.com/ergo9ine">ergo9ine</a><a href="https://github.com/ergo9ine/gf-spine-simulator" target="_blank">/gf-spine-simulator [커스텀]</a></p>
 </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/pixi.js@4.8.2/dist/pixi.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pixi.js@4.6.2/dist/pixi.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pixi-spine@1.0.10/bin/pixi-spine.min.js"></script>
 <script src="js/girlsData.js"></script>
 <script src="js/spine-data.js"></script>
