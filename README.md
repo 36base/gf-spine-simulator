@@ -28,8 +28,8 @@ bower install
 
 ## 수정된 버전의 주요 기능
  
- * Bootstrap 4.2.1 업데이트
- * pixijs 4.8.5 업데이트
+ * Bootstrap 4.1.3 업데이트
+ * pixijs 4.8.2 업데이트
  * 캐릭터 이름 한국어화
  * 개별 정지 버튼 추가
  * 배경 추가
