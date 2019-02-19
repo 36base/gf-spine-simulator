@@ -1,111 +1,62 @@
 var girlsData = {
-	"2b14":{
-		"2B14":[]
+	"M1873":{
+		"M1873":[],
+		"m1873_2105":[],
+		"M1873_301":[],
+		"RM1873":[],
+		"RM1873_301":[]
 	},
-	"6P62":{
-		"6P62":[],
-		"R6P62":{
-			"png":"6P62",
-			"atlas":"6P62"
-		},
-		"6P62_704":[],
-		"R6P62_704":{
-			"png":"6P62_704",
-			"atlas":"6P62_704"
-		}
-	},
-	"9A91":{
-		"9A91":[],
-		"R9A91":[],
-		"9A91_1302":[],
-		"R9A91_1302":{
-			"png":"9A91_1302",
-			"atlas":"9A91_1302"
-		}
+	"357":{
+		"357":[],
+		"R357":[]
 	},
 	"56-1type":{
 		"56-1type":[],
-		"R56-1type":{
-			"png":"56-1type",
-			"atlas":"56-1type"
-		},
-		"56-1type_401":[],
-		"R56-1type_401":[],
 		"56-1type_1905":[],
-		"R56-1type_1905":[]
+		"56-1type_401":[],
+		"R56-1type_401":[]
 	},
 	"56typeR":{
-		"56typeR":[],
-		"R56typeR":{
-			"png":"56typeR",
-			"atlas":"56typeR"
-		}
+		"56typeR":[]
 	},
 	"59type":{
 		"59type":[],
-		"R59type":[],
 		"59type_407":[],
+		"R59type":[],
 		"R59type_407":[]
 	},
 	"63type":{
 		"63type":[],
-		"R63type":{
-			"png":"63type",
-			"atlas":"63type"
-		},
-		"63type_2004":[],
-		"R63type_2004":{
-			"png":"63type_2004",
-			"atlas":"63type_2004"
-		}
+		"63type_2004":[]
 	},
 	"64type":{
 		"64type":[],
-		"R64type":[],
-		"64type_11":[],
-		"R64type_11":[],
 		"64type_104":[],
-		"R64type_104":[]
+		"64type_11":[],
+		"R64type":[],
+		"R64type_104":[],
+		"R64type_11":[]
 	},
 	"64typeMod":{
-		"64typeMod":[],
-		"R64typeMod":{
-			"png":"64typeMod",
-			"atlas":"64typeMod"
-		}
+		"64typeMod":[]
+	},
+	"6P62":{
+		"6P62":[],
+		"6P62_704":[],
+		"R6P62":[],
+		"R6P62_704":[]
 	},
 	"79type":{
 		"79type":[],
-		"R79type":{
-			"png":"79type",
-			"atlas":"79type"
-		},
-		"79type_1402":[],
-		"R79type_1402":{
-			"png":"79type_1402",
-			"atlas":"79type_1402"
-		}
+		"79type_1402":[]
 	},
 	"80type":{
 		"80type":[],
-		"R80type":[],
-		"80type_2504":[],
-		"R80type_2504":{
-			"png":"80type_2504",
-			"atlas":"80type_2504"
-		},
+		"R80type":[]
 	},
 	"81typeR":{
 		"81typeR":[],
-		"R81typeR":{
-			"png":"81typeR",
-			"atlas":"81typeR"
-		},
-		"81typeR_1807":[],
-		"R81typeR_1807":{
-			"png":"81typeR_1807",
-			"atlas":"81typeR_1807"
-		}
+		"81typeR_1807":[]
 	},
 	"88type":{
 		"88type":[],
@@ -113,118 +64,50 @@ var girlsData = {
 	},
 	"92type":{
 		"92type":[],
-		"R92type":{
-			"png":"92type",
-			"atlas":"92type"
-		}
+		"R92type":[]
 	},
 	"95type":{
 		"95type":[],
-		"R95type":[],
-		"95type_405":[],
-		"R95type_405":{
-			"png":"95type_405",
-			"atlas":"95type_405"
-		},
 		"95type_1102":[],
-		"R95type_1102":{
-			"png":"95type_1102",
-			"atlas":"95type_1102"
-		}
+		"95type_405":[],
+		"R95type":[],
+		"R95type_405":[]
 	},
 	"97type":{
 		"97type":[],
-		"R97type":{
-			"png":"97type",
-			"atlas":"97type"
-		},
 		"97type_406":[],
-		"R97type_406":{
-			"png":"97type_406",
-			"atlas":"97type_406"
-		}
+		"R97type":[],
+		"R97type_406":[]
 	},
 	"97typeS":{
 		"97typeS":[],
-		"r97typeS":[]
+		"R97typeS":[]
 	},
 	"98K":{
-		"98K":[],
-		"R98K":{
-			"png":"98K",
-			"atlas":"98K"
-		}
+		"98K":[]
 	},
-	"357":{
-		"357":[],
-		"R357":[]
-	},
-	"A91":{
-		"A91":[],
-		"RA91":{
-			"png":"A91",
-			"atlas":"A91"
-		}
+	"9A91":{
+		"9A91":[],
+		"9A91_1302":[],
+		"R9A91":[]
 	},
 	"AA12":{
-		"aa12":[],
-		"raa12":{
-			"png":"aa12",
-			"atlas":"aa12"
-		}
+		"aa12":[]
 	},
 	"AAT52":{
 		"AAT52":[],
 		"RAAT52":[]
 	},
-	"aegis":{
-		"Aegis":[],
-		"Aegis_GA":[],
-		"Aegis_GA_F":{
-			"png":"Aegis_GA",
-			"atlas":"Aegis_GA"
-		},
-		"Aegis_SWAP":[]
-	},
-	"aliasse":{
-		"Aliasse":[],
-		"RAliasse":{
-			"png":"Aliasse",
-			"atlas":"Aliasse"
-		},
-		"Aliasse_512":[],
-		"RAliasse_512":{
-			"png":"Aliasse_512",
-			"atlas":"Aliasse_512"
-		},
-		"Aliasse_518":[],
-		"RAliasse_518":{
-			"png":"Aliasse_518",
-			"atlas":"Aliasse_518"
-		}
+	"Aegis":{
+		"Aegis":[]
 	},
 	"AEK999":{
 		"AEK999":[],
 		"AEK999_1505":[]
 	},
-	"Ak5":{
-		"Ak5":[],
-		"Ak5":{
-			"png":"Ak5",
-			"atlas":"Ak5"
-		}
-	},
 	"AK12":{
 		"AK12":[],
-		"RAK12":[],
-		"AK12_2402":[],
-		"RAK12_2402":{
-			"png":"AK12_2402",
-			"atlas":"AK12_2402"
-		}
-	},
-	"ak12_motor":{
-		"AK12_Motor":[],
+		"RAK12":[]
 	},
 	"AK47":{
 		"AK47":[],
@@ -232,9 +115,11 @@ var girlsData = {
 		"RAK47":[],
 		"RAK47_501":[]
 	},
-	"AK74U":{
-		"AK74u":[],
-		"RAK74u":[]
+	"AK5":{
+		"AK5":[]
+	},
+	"Alchemist":{
+		"Alchemist":[]
 	},
 	"Ameli":{
 		"Ameli":[],
@@ -242,86 +127,41 @@ var girlsData = {
 	},
 	"AN94":{
 		"AN94":[],
-		"RAN94":[],
-		"AN94_2404":[],
-		"RAN94_2404":{
-			"png":"AN94_2404",
-			"atlas":"AN94_2404"
-		}
-	},
-	"an94_motor":{
-		"AN94_Motor":[],
+		"RAN94":[]
 	},
 	"APS":{
-		"APS":[],
-		"RAPS":{
-			"png":"APS",
-			"atlas":"APS"
-		}
-	},
-	"AR":{
-		"AR":[],
-		"RAR":[]
+		"APS":[]
 	},
 	"AR15":{
 		"AR15":[],
-		"RAR15":[],
 		"AR15_701":[],
-		"RAR15_701":{
-			"png":"AR15_701",
-			"atlas":"AR15_701"
-		}
+		"RAR15":[]
 	},
 	"AR15Mod":{
 		"AR15Mod":[],
 		"RAR15Mod":[]
 	},
-	"ar15_motor":{
-		"AR15_Motor":[],
-	},
 	"AR70":{
 		"AR70":[],
 		"RAR70":[]
 	},
+	"AR":{
+		"AR":[],
+		"RAR":[]
+	},
 	"ART556":{
 		"ART556":[],
-		"RART556":{
-			"png":"ART556",
-			"atlas":"ART556"
-		},
-		"ART556_1803":[],
-		"RART556_1803":{
-			"png":"ART556_1803",
-			"atlas":"ART556_1803"
-		},
-		"ART556_2803":[],
-		"RART556_2803":{
-			"png":"ART556_2803",
-			"atlas":"ART556_2803"
-		}
+		"ART556_1803":[]
 	},
 	"ARX160":{
-		"ARX160":[],
-		"RARX160":{
-			"png":"ARX160",
-			"atlas":"ARX160"
-		}
+		"ARX160":[]
 	},
 	"Ash127":{
 		"Ash127":[],
 		"RAsh127":[]
 	},
 	"ASVAL":{
-		"ASVAL":[],
-		"RASVAL":{
-			"png":"ASVAL",
-			"atlas":"ASVAL"
-		},
-		"ASVAL_2907":[],
-		"RASVAL_2907":{
-			"png":"ASVAL_2907",
-			"atlas":"ASVAL_2907"
-		}
+		"ASVAL":[]
 	},
 	"AUG":{
 		"AUG":[],
@@ -335,72 +175,19 @@ var girlsData = {
 	},
 	"BB_Noel":{
 		"BB_Noel":[],
-		"RBB_Noel":{
-			"png":"BB_Noel",
-			"atlas":"BB_Noel"
-		},
-		"BB_Noel_503":[],
-		"RBB_Noel_503":{
-			"png":"BB_Noel_503",
-			"atlas":"BB_Noel_503"
-		}
-	},
-	"bh2":{
-		"BH2_Archer":[],
-		"BH2_Burst":[],
-		"BH2_Normal":[],
-		"BH2_Shield":[]
-	},
-	"bossagent":{
-		"Agent":[]
-	},
-	"bossalchemist":{
-		"Alchemist":[]
-	},
-	"bossarchitect":{
-		"Boss9":[]
-	},
-	"bossbeak":{
-		"Beak_M16":[],
-		"Beak_sub":[]
-	},
-	"bosscerberus":{
-		"Cerberus":[]
-	},
-	"bossdestroyer":{
-		"Destroyer":{
-			"json":"Destroyer"
-		}
-	},
-	"bossdestroyerplus":{
-		"DestroyerPlus":[]
-	},
-	"bossdreamer":{
-		"Boss10":[]
-	},
-	"bossexcutioner":{
-		"Excutioner":[]
-	},
-	"bossgager":{
-		"Boss8":[]
-	},
-	"bosshunter":{
-		"Hunter":[]
-	},
-	"bossintruder":{
-		"Intruder":[]
-	},
-	"bossjustice":{
-		"Justice":[]
-	},
-	"bossscarecrow":{
-		"Scarecrow":[]
-	},
-	"bossweaver":{
-		"Weaver":[]
+		"BB_Noel_503":[]
 	},
 	"BM59":{
 		"BM59":[]
+	},
+	"Boss10":{
+		"Boss10":[]
+	},
+	"Boss8":{
+		"Boss8":[]
+	},
+	"Boss9":{
+		"Boss9":[]
 	},
 	"BrenMK":{
 		"BrenMK":[],
@@ -434,56 +221,18 @@ var girlsData = {
 	},
 	"CBJMS":{
 		"CBJMS":[],
-		"RCBJMS":{
-			"png":"CBJMS",
-			"atlas":"CBJMS"
-		},
-		"CBJMS_2205":[],
-		"RCBJMS_2205":{
-			"png":"CBJMS_2205",
-			"atlas":"CBJMS_2205"
-		}
+		"CBJMS_2205":[]
 	},
-	"cerynitis":{
-		"Cerynitis":[]
-	},
-	"CETME556":{
-		"CETME556":[],
-		"RCETME556":[]
+	"Cerberus":{
+		"Cerberus":[]
 	},
 	"CLEAR":{
 		"CLEAR":[],
-		"RCLEAR":{
-			"png":"CLEAR",
-			"atlas":"CLEAR"
-		},
 		"CLEAR_509":[],
 		"RCLEAR_509":[]
 	},
-	"cmboard":{
+	"CMboard":{
 		"CMboard":[]
-	},
-	"coffee":{
-		"coffee":[]
-	},
-	"coyote":{
-		"Coyote":[]
-	},
-	"Cx4Storm":{
-		"Cx4Storm":[],
-		"RCx4Storm":[]
-	},
-	"cyclops":{
-		"Cyclops":[],
-		"Cyclops_F":{
-			"png":"Cyclops",
-			"atlas":"Cyclops"
-		},
-		"Cyclops_SG":[],
-		"Cyclops_SG_F":{
-			"png":"Cyclops_SG",
-			"atlas":"Cyclops_SG"
-		}
 	},
 	"ColtSCW":{
 		"ColtSCW":[],
@@ -491,69 +240,43 @@ var girlsData = {
 	},
 	"Contender":{
 		"Contender":[],
-		"RContender":[],
 		"Contender_1502":[],
-		"RContender_1502":[],
-		"Contender_2302":[],
-		"RContender_2302":{
-			"png":"Contender_2302",
-			"atlas":"Contender_2302"
-		}
+		"RContender":[]
+	},
+	"Coyote":{
+		"Coyote":[]
+	},
+	"CZ2000":{
+		"CZ2000":[]
 	},
 	"CZ52":{
-		"CZ52":[],
-		"RCZ52":[]
+		"CZ52":[]
 	},
 	"CZ75":{
 		"CZ75":[],
-		"RCZ75":[],
 		"CZ75_1604":[],
-		"RCZ75_1604":[]
+		"RCZ75":[]
 	},
 	"CZ805":{
-		"CZ805":[],
-		"RCZ805":{
-			"png":"CZ805",
-			"atlas":"CZ805"
-		}
+		"CZ805":[]
 	},
-	"CZ2000":{
-		"CZ2000":[],
-		"RCZ2000":{
-			"png":"CZ2000",
-			"atlas":"CZ2000"
-		}
+	"Destroyer":{
+		"Destroyer":[]
 	},
-	"dactyl":{
-		"Dactyl":[]
+	"DestroyerPlus":{
+		"DestroyerPlus":[]
 	},
 	"Dinergate":{
 		"Dinergate":[],
-		"RDinergate":{
-			"png":"Dinergate",
-			"atlas":"Dinergate"
-		},
 		"RDinergate_chm1":[],
-		"RDinergate_chm2":[],
-		"RDinergate_cracker":[],
-		"RDinergate_korea":[],
-		"RDinergate_RockRoll":[],
-		"Sled":[]
-	},
-	"doppelsoldner":{
-		"Doppelsoldner":[]
+		"RDinergate_chm2":[]
 	},
 	"DP28":{
 		"DP28":[],
 		"RDP28":[]
 	},
 	"Dragoon":{
-		"Dragoon":[],
-		"Dragoon_NPC":{
-			"png":"Dragoon",
-			"atlas":"Dragoon"
-		},
-		"Dragoon_SWAP":[]
+		"Dragoon":[]
 	},
 	"Drone":{
 		"Drone":[]
@@ -569,15 +292,7 @@ var girlsData = {
 	},
 	"EVO3":{
 		"EVO3":[],
-		"Revo3":{
-			"png":"EVO3",
-			"atlas":"EVO3"
-		},
-		"EVO3_2109":[],
-		"Revo3_2109":{
-			"png":"EVO3_2109",
-			"atlas":"EVO3_2109"
-		}
+		"evo3_2109":[]
 	},
 	"Excutioner":{
 		"Excutioner":[]
@@ -586,56 +301,29 @@ var girlsData = {
 		"ExcutionerElite":[]
 	},
 	"F1":{
-		"F1":[],
-		"RF1":{
-			"png":"F1",
-			"atlas":"F1"
-		},
-		"F1_2606":[],
-		"RF1_2606":{
-			"png":"F1_2606",
-			"atlas":"F1_2606"
-		}
+		"F1":[]
 	},
 	"F2000":{
-		"F2000":[],
-		"RF2000":{
-			"png":"F2000",
-			"atlas":"F2000"
-		}
+		"F2000":[]
 	},
 	"FAIL":{
 		"FAIL":[],
-		"RFAIL":{
-			"png":"FAIL",
-			"atlas":"FAIL"
-		},
-		"FAIL_506":[],
-		"RFAIL_506":[],
 		"FAIL_510":[],
-		"RFAIL_510":[],
-		"FAIL_boss":{
-			"png":"FAIL",
-			"atlas":"FAIL"
-		}
+		"RFAIL_510":[]
 	},
 	"FAMAS":{
 		"FAMAS":[],
-		"RFAMAS":[],
-		"FAMAS_2604":[],
-		"RFAMAS_2604":{
-			"png":"FAMAS_2604",
-			"atlas":"FAMAS_2604"
-		}
+		"RFAMAS":[]
 	},
 	"FG42":{
 		"FG42":[],
 		"RFG42":[]
 	},
 	"Filegen":{
-		"Filegen":[],
-		/*"Filegen2":[],*/
-		"strewflowers":[],
+		"Filegen":[]
+	},
+	"Fliegen2":{
+		"Fliegen2":[]
 	},
 	"flyboat":{
 		"flyboat":[]
@@ -652,58 +340,20 @@ var girlsData = {
 	},
 	"FN57":{
 		"FN57":[],
-		"RFN57":[],
 		"FN57_1109":[],
-		"RFN57_1109":{
-			"png":"FN57_1109",
-			"atlas":"FN57_1109"
-		},
 		"FN57_1902":[],
-		"RFN57_1902":{
-			"png":"FN57_1902",
-			"atlas":"FN57_1902"
-		},
 		"FN57_2203":[],
-		"RFN57_2203":{
-			"png":"FN57_2203",
-			"atlas":"FN57_2203"
-		},
-		"FN57_2805":[],
-		"RFN57_2805":{
-			"png":"FN57_2805",
-			"atlas":"FN57_2805"
-		}
+		"RFN57":[]
 	},
 	"FNFAL":{
 		"FNFAL":[],
-		"RFNFAL":{
-			"png":"FNFAL",
-			"atlas":"FNFAL"
-		},
 		"FNFAL_308":[],
-		"RFNFAL_308":{
-			"png":"FNFAL_308",
-			"atlas":"FNFAL_308"
-		},
-		"FNFAL_607":[],
-		"RFNFAL_607":{
-			"png":"FNFAL_607",
-			"atlas":"FNFAL_607"
-		},
-		"FNFAL_2406":[],
-		"RFNFAL_2406":{
-			"png":"FNFAL_2406",
-			"atlas":"FNFAL_2406"
-		}
+		"FNFAL_607":[]
 	},
 	"FNFNC":{
 		"FNFNC":[],
-		"RFNFNC":[],
 		"FNFNC_1406":[],
-		"RFNFNC_1406":{
-			"png":"FNFNC_1406",
-			"atlas":"FNFNC_1406"
-		}
+		"RFNFNC":[]
 	},
 	"FNP9":{
 		"FNP9":[],
@@ -712,34 +362,12 @@ var girlsData = {
 	"FP6":{
 		"fp6":[]
 	},
-	"G3":{
-		"G3":[],
-		"RG3":[],
-		"G3_1303":[],
-		"RG3_1303":[],
-	},
-	"G3Mod":{
-		"G3Mod":[],
-		"RG3Mod":{
-			"png":"G3Mod",
-			"atlas":"G3Mod"
-		},
-	},
 	"G11":{
 		"G11":[],
-		"RG11":[],
-		"G11_9":[],
-		"RG11_9":[],
 		"G11_1602":[],
-		"RG11_1602":{
-			"png":"G11_1602",
-			"atlas":"G11_1602"
-		},
-		"G11_2502":[],
-		"RG11_2502":{
-			"png":"G11_2502",
-			"atlas":"G11_2502"
-		},
+		"G11_9":[],
+		"RG11":[],
+		"RG11_9":[]
 	},
 	"G28":{
 		"G28":[],
@@ -747,60 +375,23 @@ var girlsData = {
 	},
 	"G36":{
 		"G36":[],
-		"RG36":[],
-		"G36_905":[],
-		"RG36_905":{
-			"png":"G36_905",
-			"atlas":"G36_905"
-		},
 		"G36_1507":[],
-		"RG36_1507":{
-			"png":"G36_1507",
-			"atlas":"G36_1507"
-		},
-		"G36_1904":[],
-		"RG36_1904":{
-			"png":"G36_1904",
-			"atlas":"G36_1904"
-		},
-		"G36_2407":[],
-		"RG36_2407":{
-			"png":"G36_2407",
-			"atlas":"G36_2407"
-		},
-		"G36_2806":[],
-		"RG36_2806":{
-			"png":"G36_2806",
-			"atlas":"G36_2806"
-		},
-	},
-	"G36Mod":{
-		"G36Mod":[],
-		"RG36Mod":{
-			"png":"G36Mod",
-			"atlas":"G36Mod"
-		},
+		"g36_1904":[],
+		"G36_905":[],
+		"RG36":[]
 	},
 	"G36C":{
 		"G36C":[],
-		"RG36C":[],
 		"G36C_1202":[],
-		"RG36C_1202":{
-			"png":"G36C_1202",
-			"atlas":"G36C_1202"
-		}
+		"RG36C":[]
+	},
+	"G3":{
+		"G3":[],
+		"G3_1303":[],
+		"RG3":[]
 	},
 	"G41":{
-		"G41":[],
-		"RG41":{
-			"png":"G41",
-			"atlas":"G41"
-		},
-		"G41_2401":[],
-		"RG41_2401":{
-			"png":"G41_2401",
-			"atlas":"G41_2401"
-		}
+		"G41":[]
 	},
 	"G43":{
 		"G43":[],
@@ -818,44 +409,37 @@ var girlsData = {
 		"RGG_elfeldt_504":[],
 		"RGG_elfeldt_505":[]
 	},
-	"ghost":{
-		"Rghost":[]
-	},
 	"Glock17":{
 		"Glock17":[],
 		"RGlock17":[]
 	},
 	"Golyat":{
-		"Golyat":[],
+		"Golyat":[]
+	},
+	"GolyatPlus":{
 		"GolyatPlus":[]
 	},
 	"Grizzly":{
 		"Grizzly":[],
-		"RGrizzly":[],
 		"Grizzly_105":[],
-		"RGrizzly_105":[],
+		"grizzly_2102":[],
 		"Grizzly_903":[],
-		"RGrizzly_903":[],
-		"Grizzly_2102":[],
-		"RGrizzly_2102":{
-			"png":"Grizzly_2102",
-			"atlas":"Grizzly_2102"
-		}
+		"RGrizzly":[],
+		"RGrizzly_105":[],
+		"RGrizzly_903":[]
 	},
 	"GSH18":{
 		"GSH18":[],
 		"RGSH18":[]
 	},
 	"Guard":{
-		"Guard":[],
-		"Guard_SWAP":[],
+		"Guard":[]
 	},
 	"HEZISM1":{
 		"HEZISM1":[]
 	},
 	"Himeko":{
-		"Himeko":[],
-		"RHimeko":[]
+		"Himeko":[]
 	},
 	"HK21":{
 		"HK21":[]
@@ -866,24 +450,11 @@ var girlsData = {
 	},
 	"HK416":{
 		"HK416":[],
-		"RHK416":[],
 		"HK416_805":[],
-		"RHK416_805":{
-			"png":"HK416_805",
-			"atlas":"HK416_805"
-		},
+		"RHK416":[]
 	},
 	"HK45":{
-		"HK45":[],
-		"RHK45":{
-			"png":"HK45",
-			"atlas":"HK45"
-		},
-		"HK45_2705":[],
-		"RHK45_2705":{
-			"png":"HK45_2705",
-			"atlas":"HK45_2705"
-		}
+		"HK45":[]
 	},
 	"Hunter":{
 		"Hunter":[]
@@ -893,16 +464,12 @@ var girlsData = {
 	},
 	"IDW":{
 		"IDW":[],
+		"idw_2108":[],
 		"RIDW":[],
-		"IDW_2108":[],
-		"RIDW_2108":[]
+		"ridw_2108":[]
 	},
 	"IDWMod":{
-		"IDWMod":[],
-		"RIDWMod":{
-			"png":"IDWMod",
-			"atlas":"IDWMod"
-		}
+		"IDWMod":[]
 	},
 	"Intruder":{
 		"Intruder":[]
@@ -920,86 +487,51 @@ var girlsData = {
 		"IWS2000_1403":[]
 	},
 	"Jaeger":{
-		"Jaeger":[],
-		"Jaeger_SWAP":[]
+		"Jaeger":[]
 	},
 	"Jaguar":{
 		"Jaguar":[]
 	},
-	"Jericho":{
-		"Jericho":[],
-		"RJericho":{
-			"png":"Jericho",
-			"atlas":"Jericho"
-		}
-	},
-	"JS9mm":{
-		"JS9mm":[],
-		"RJS9mm":{
-			"png":"JS9mm",
-			"atlas":"JS9mm"
-		}
-	},
 	"JS-127":{
 		"JS-127":[],
 		"JS-127_1804":[]
-	},
-	"jukebox":{
-		"Jukebox":[]
 	},
 	"Jupiter":{
 		"Jupiter":[]
 	},
 	"K2":{
 		"K2":[],
-		"RK2":{
-			"png":"K2",
-			"atlas":"K2"
-		},
-		"K2_2001":[],
-		"RK2_2001":{
-			"png":"K2_2001",
-			"atlas":"K2_2001"
-		}
+		"K2_2001":[]
 	},
 	"K5":{
 		"K5":[],
-		"RK5":[],
-		"K5_2002":[],
-		"RK5_2002":[]
+		"K5_2002":[]
 	},
-	"K7":{
-		"K7":[],
-		"RK7":[]
-	},
-	"K11":{
-		"K11":[],
-		"RK11":{
-			"png":"K11",
-			"atlas":"K11"
-		}
+	"Kalina":{
+		"Kalina":[],
+		"Kalina_angle":[],
+		"Kalina_beach":[],
+		"Kalina_DLS":[],
+		"Kalina_president":[]
 	},
 	"Kiana":{
 		"Kiana":[],
-		"RKiana":[],
-		"Kiana_506":[],
-		"RKiana_506":[]
+		"Kiana_506":[]
 	},
 	"KLIN":{
 		"KLIN":[],
-		"RKLIN":[],
 		"KLIN_1204":[],
-		"RKLIN_1204":[],
 		"KLIN_2003":[],
-		"RKLIN_2003":[]
+		"RKLIN":[],
+		"RKLIN_1204":[]
 	},
 	"KP31":{
 		"KP31":[],
-		"RKP31":[],
-		"KP31_310":[],
-		"RKP31_310":[],
 		"KP31_1103":[],
-		"RKP31_1103":[]
+		"KP31_310":[],
+		"RKP31":[],
+		"RKP31_1103":[],
+		"RKP31_310":[]
 	},
 	"KS23":{
 		"KS23":[],
@@ -1038,24 +570,6 @@ var girlsData = {
 		"M16A1":[],
 		"RM16A1":[]
 	},
-	"M1873":{
-		"M1873":[],
-		"RM1873":[],
-		"M1873_301":[],
-		"RM1873_301":[],
-		"M1873_2105":[],
-		"RM1873_2105":{
-			"png":"M1873_2105",
-			"atlas":"M1873_2105"
-		}
-	},
-	"M1873Mod":{
-		"M1873Mod":[],
-		"RM1873Mod":{
-			"png":"M1873Mod",
-			"atlas":"M1873Mod"
-		}
-	},
 	"M1887":{
 		"M1887":[],
 		"RM1887":[]
@@ -1066,26 +580,13 @@ var girlsData = {
 		"RM1891":[]
 	},
 	"M1891Mod":{
-		"M1891Mod":[]
+		"m1891mod":[]
 	},
 	"M1895":{
-		"M1895":[],
-		"RM1895":{
-			"png":"M1895",
-			"atlas":"M1895"
-		},
-		"M1895_2706":[],
-		"RM1895_2706":{
-			"png":"M1895_2706",
-			"atlas":"M1895_2706"
-		}
+		"M1895":[]
 	},
 	"M1895Mod":{
-		"M1895Mod":[],
-		"RM1895Mod":{
-			"png":"M1895Mod",
-			"atlas":"M1895Mod"
-		}
+		"m1895mod":[]
 	},
 	"M1897":{
 		"M1897":[]
@@ -1128,12 +629,8 @@ var girlsData = {
 	},
 	"M1928A1":{
 		"M1928A1":[],
-		"RM1928A1":[],
 		"M1928A1_1501":[],
-		"RM1928A1_1501":{
-			"png":"M1928A1_1501",
-			"atlas":"M1928A1_1501"
-		}
+		"RM1928A1":[]
 	},
 	"M1":{
 		"M1":[],
@@ -1165,23 +662,12 @@ var girlsData = {
 		"RM3":[]
 	},
 	"M4 SOPMOD II":{
-		"M4 SOPMOD II":[],
-		"RM4 SOPMOD II":{
-			"png":"M4 SOPMOD II",
-			"atlas":"M4 SOPMOD II"
-		}
-	},
-	"M4 SOPMOD IIMod":{
-		"M4 SOPMOD IIMod":[],
-		"RM4 SOPMOD IIMod":{
-			"png":"M4 SOPMOD IIMod",
-			"atlas":"M4 SOPMOD IIMod"
-		}
+		"M4 SOPMOD II":[]
 	},
 	"m45":{
 		"m45":[],
-		"Rm45":[],
 		"m45_4":[],
+		"Rm45":[],
 		"Rm45_4":[]
 	},
 	"M4A1":{
@@ -1189,11 +675,7 @@ var girlsData = {
 		"RM4A1":[]
 	},
 	"M4A1Mod":{
-		"M4A1Mod":[],
-		"RM4A1Mod":{
-			"png":"M4A1Mod",
-			"atlas":"M4A1Mod"
-		}
+		"M4A1Mod":[]
 	},
 	"M500":{
 		"M500":[],
@@ -1210,23 +692,10 @@ var girlsData = {
 	},
 	"M950A":{
 		"M950A":[],
-		"RM950A":[],
 		"M950A_702":[],
-		"RM950A_702":[],
 		"M950A_808":[],
-		"RM950A_808":{
-			"png":"M950A_808",
-			"atlas":"M950A_808"
-		},
-		"M950A_2303":[],
-		"RM950A_2303":{
-			"png":"M950A_2303",
-			"atlas":"M950A_2303"
-		},
-		"M950A_event":{
-			"png":"M950A",
-			"atlas":"M950A"
-		}
+		"RM950A":[],
+		"RM950A_702":[]
 	},
 	"M99":{
 		"M99":[],
@@ -1246,26 +715,11 @@ var girlsData = {
 		"MAC10":[],
 		"RMAC10":[]
 	},
-	"magicbook":{
-		"MagicBook":[]
-	},
 	"Manticore":{
 		"Manticore":[]
 	},
 	"MDR":{
-		"MDR":[],
-		"RMDR":{
-			"png":"MDR",
-			"atlas":"MDR"
-		},
-		"MDR_2603":[],
-		"RMDR_2603":{
-			"png":"MDR_2603",
-			"atlas":"MDR_2603"
-		}
-	},
-	"mercenary":{
-		"Strelet":[]
+		"MDR":[]
 	},
 	"MG34":{
 		"MG34":[],
@@ -1295,23 +749,15 @@ var girlsData = {
 	},
 	"MicroUZI":{
 		"MicroUZI":[],
-		"RMicroUZI":[],
 		"MicroUZI_101":[],
+		"RMicroUZI":[],
 		"RMicroUZI_101":[]
 	},
 	"Mk23":{
 		"Mk23":[],
-		"RMk23":[],
-		"Mk23_8":[],
-		"RMk23_8":{
-			"png":"Mk23_8",
-			"atlas":"Mk23_8"
-		},
 		"Mk23_1805":[],
-		"RMk23_1805":{
-			"png":"Mk23_1805",
-			"atlas":"Mk23_1805"
-		}
+		"Mk23_8":[],
+		"RMk23":[]
 	},
 	"MK48":{
 		"MK48":[],
@@ -1327,8 +773,8 @@ var girlsData = {
 	},
 	"MP40":{
 		"MP40":[],
-		"RMP40":[],
 		"MP40_902":[],
+		"RMP40":[],
 		"RMP40_902":[]
 	},
 	"MP443":{
@@ -1337,47 +783,25 @@ var girlsData = {
 	},
 	"MP446":{
 		"MP446":[],
-		"RMP446":[],
 		"MP446_103":[],
-		"RMP446_103":[],
 		"MP446_402":[],
-		"RMP446_402":{
-			"png":"MP446_402",
-			"atlas":"MP446_402"
-		}
+		"RMP446":[],
+		"RMP446_103":[]
 	},
 	"MP446Mod":{
 		"MP446Mod":[],
-		"RMP446Mod":[]
-	},
-	"MP448":{
-		"MP448":[],
-		"RMP448":{
-			"png":"MP448",
-			"atlas":"MP448"
-		}
+		"rmp446mod":[]
 	},
 	"MP5":{
 		"MP5":[],
-		"RMP5":[],
-		"MP5_3":[],
-		"RMP5_3":[],
 		"MP5_1205":[],
-		"RMP5_1205":{
-			"png":"MP5_1205",
-			"atlas":"MP5_1205"
-		},
 		"MP5_1903":[],
-		"RMP5_1903":[]
+		"MP5_3":[],
+		"RMP5":[],
+		"RMP5_3":[]
 	},
 	"MP7":{
-		"MP7":[],
-		"RMP7":[],
-		"MP7_2405":[],
-		"RMP7_2405":{
-			"png":"MP7_2405",
-			"atlas":"MP7_2405"
-		}
+		"MP7":[]
 	},
 	"MT9":{
 		"MT9":[],
@@ -1391,20 +815,14 @@ var girlsData = {
 	"Nemeum":{
 		"Nemeum":[]
 	},
-	"NPC_Kalina":{
-		"Kalina":[],
-		"Kalina_angle":[],
-		"Kalina_beach":[],
-		"Kalina_DLS":[],
-		"Kalina_Maid":[],
-		"Kalina_president":[],
+	"NPC":{
 		"NPC_Kalina_201":[],
 		"NPC_Kalina_202":[],
 		"NPC_Kalina_203":[],
-		"NPC_Kalina_204":[],
-		"NPC_Kalina_205":[],
-		"NPC_Kalina_206":[],
-		"NPC_Kalina_207":[]
+		"NPC_Kalina_204":[]
+	},
+	"NPC_Kalina":{
+		"NPC_Kalina_205":[]
 	},
 	"NS2000":{
 		"NS2000":[],
@@ -1418,19 +836,12 @@ var girlsData = {
 		"RNTW20_1101":[],
 		"RNTW20_307":[]
 	},
-	"nyto":{
-		"Nyto_black":[],
-		"Nyto_Gold":[],
-		"Nyto_Silver":[],
-		"Nyto_white":[]
-	},
 	"NZ75":{
 		"NZ75":[],
-		"RNZ75":[],
-		"NZ75_403":[],
-		"RNZ75_403":[],
 		"NZ75_1702":[],
-		"RNZ75_1702":[]
+		"NZ75_403":[],
+		"RNZ75":[],
+		"RNZ75_403":[]
 	},
 	"OC44":{
 		"OC44":[],
@@ -1443,73 +854,36 @@ var girlsData = {
 	},
 	"OTs14":{
 		"OTs14":[],
-		"ROTs14":[],
 		"OTs14_1203":[],
+		"ROTs14":[],
 		"ROTs14_1203":[]
 	},
 	"OTs39":{
-		"OTs39":[],
-		"ROTs39":{
-			"png":"OTs39",
-			"atlas":"OTs39"
-		}
+		"OTs39":[]
 	},
 	"P08":{
 		"P08":[],
 		"RP08":[]
 	},
 	"P226":{
-		"P226":[],
-		"RP226":{
-			"png":"P226",
-			"atlas":"P226"
-		}
+		"P226":[]
 	},
 	"P38":{
 		"P38":[],
-		"RP38":[],
-		"P38_2410":[],
-		"RP38_2410":{
-			"png":"P38_2410",
-			"atlas":"P38_2410"
-		}
+		"RP38":[]
 	},
 	"P7":{
 		"P7":[],
-		"RP7":[],
-		"P7_606":[],
-		"RP7_606":{
-			"png":"P7_606",
-			"atlas":"P7_606"
-		},
 		"P7_1404":[],
-		"RP7_1404":{
-			"png":"P7_1404",
-			"atlas":"P7_1404"
-		}
-	},
-	"P90":{
-		"P90":[],
-		"RP90":{
-			"png":"P90",
-			"atlas":"P90"
-		},
-		"P90_2802":[],
-		"RP90_2802":{
-			"png":"P90_2802",
-			"atlas":"P90_2802"
-		},
+		"P7_606":[],
+		"RP7":[]
 	},
 	"P99":{
 		"P99":[],
 		"RP99":[]
 	},
 	"PDW":{
-		"PDW":[],
-		"RPDW":{
-			"png":"PDW",
-			"atlas":"PDW"
-		}
+		"PDW":[]
 	},
 	"pet":{
 		"cat1":[],
@@ -1537,27 +911,27 @@ var girlsData = {
 	},
 	"PM":{
 		"PM":[],
-		"RPM":[],
 		"PM_1":[],
+		"RPM":[],
 		"RPM_1":[]
-	},
-	"PP19":{
-		"PP19":[],
-		"RPP19":[],
-		"PP19_2204":[],
-		"RPP19_2204":[]
-	},
-	"PP90":{
-		"PP90":[],
-		"RPP90":[]
 	},
 	"PP1901":{
 		"PP1901":[],
 		"RPP1901":[]
 	},
+	"PP19":{
+		"PP19":[],
+		"PP19_2204":[],
+		"RPP19":[],
+		"RPP19_2204":[]
+	},
 	"PP2000":{
 		"PP2000":[],
 		"RPP2000":[]
+	},
+	"PP90":{
+		"PP90":[],
+		"RPP90":[]
 	},
 	"PPK":{
 		"PPK":[],
@@ -1569,16 +943,11 @@ var girlsData = {
 	},
 	"PPsh41":{
 		"PPsh41":[],
-		"RPPsh41":[],
 		"PPsh41_602":[],
-		"RPPsh41_602":{
-			"png":"PPsh41_602",
-			"atlas":"PPsh41_602"
-		}
+		"RPPsh41":[]
 	},
 	"Prowler":{
-		"Prowler":[],
-		"Prowler_SWAP":[]
+		"Prowler":[]
 	},
 	"PSG1":{
 		"PSG1":[],
@@ -1593,25 +962,6 @@ var girlsData = {
 		"PTRD_408":[],
 		"RPTRD":[],
 		"RPTRD_408":[]
-	},
-	"Px4Storm":{
-		"Px4Storm":[],
-		"RPx4Storm":{
-			"png":"Px4Storm",
-			"atlas":"Px4Storm"
-		},
-		"Px4Storm_2801":[],
-		"RPx4Storm_2801":{
-			"png":"Px4Storm_2801",
-			"atlas":"Px4Storm_2801"
-		}
-	},
-	"Python":{
-		"Python":[],
-		"RPython":{
-			"png":"Python",
-			"atlas":"Python"
-		}
 	},
 	"PZB39":{
 		"PZB39":[],
@@ -1629,17 +979,11 @@ var girlsData = {
 	},
 	"RFB":{
 		"RFB":[],
-		"RRFB":[],
 		"RFB_1601":[],
-		"RRFB_1601":{
-			"png":"RFB_1601",
-			"atlas":"RFB_1601"
-		},
-		"RFB_2902":[],
-		"RRFB_2902":{
-			"png":"RFB_2902",
-			"atlas":"RFB_2902"
-		},
+		"RRFB":[]
+	},
+	"Rghost":{
+		"Rghost":[]
 	},
 	"Ribeyrolles":{
 		"Ribeyrolles":[],
@@ -1647,6 +991,9 @@ var girlsData = {
 	},
 	"Ripper":{
 		"Ripper":[]
+	},
+	"rippling":{
+		"rippling":[]
 	},
 	"RMB93":{
 		"RMB93":[],
@@ -1660,13 +1007,6 @@ var girlsData = {
 	"RPD":{
 		"RPD":[],
 		"RRPD":[]
-	},
-	"SAR21":{
-		"SAR21":[],
-		"RSAR21":{
-			"png":"SAR21",
-			"atlas":"SAR21"
-		},
 	},
 	"SAT8":{
 		"RSAT8":[],
@@ -1689,12 +1029,12 @@ var girlsData = {
 		"Seele_508":[]
 	},
 	"Shipka":{
-		"Shipka":[],
 		"RShipka":[],
+		"Shipka":[]
 	},
 	"SIG510":{
-		"SIG510":[],
 		"RSIG510":[],
+		"SIG510":[]
 	},
 	"SKS":{
 		"RSKS":[],
@@ -1705,51 +1045,42 @@ var girlsData = {
 		"SPAS12":[]
 	},
 	"SpectreM4":{
-		"SpectreM4":[],
 		"RSpectreM4":[],
+		"SpectreM4":[]
 	},
 	"Spitfire":{
-		"Spitfire":[],
 		"RSpitfire":[],
-		"Spitfire_1405":[],
-		"RSpitfire_1405":[]
+		"Spitfire":[],
+		"Spitfire_1405":[]
 	},
 	"SPP1":{
-		"SPP1":[],
 		"RSPP1":[],
-		"SPP1_1703":[],
-		"RSPP1_1703":[]
+		"SPP1":[],
+		"SPP1_1703":[]
 	},
 	"SPS":{
-		"SPS":[],
-		"RSPS":[]
+		"RSPS":[],
+		"SPS":[]
 	},
 	"SR3MP":{
-		"SR3MP":[],
 		"RSR3MP":[],
-		"SR3MP_807":[],
 		"RSR3MP_807":[],
+		"SR3MP":[],
+		"SR3MP_807":[]
 	},
 	"SSG69":{
 		"RSSG69":[],
 		"SSG69":[]
 	},
 	"StenMK2":{
-		"StenMK2":[],
 		"RStenMK2":[],
-		"StenMK2_603":[],
 		"RStenMK2_603":[],
-	},
-	"StenMK2Mod":{
-		"StenMK2Mod":[],
-		"RStenMK2Mod":{
-			"png":"StenMK2Mod",
-			"atlas":"StenMK2Mod"
-		}
+		"StenMK2":[],
+		"StenMK2_603":[]
 	},
 	"STG44":{
-		"STG44":[],
 		"RSTG44":[],
+		"STG44":[]
 	},
 	"Striker":{
 		"Striker":[]
@@ -1786,16 +1117,16 @@ var girlsData = {
 		"T5000":[]
 	},
 	"T65":{
-		"T65":[],
 		"RT65":[],
+		"T65":[]
 	},
 	"T77":{
-		"T77":[],
-		"RT77":[]
+		"RT77":[],
+		"T77":[]
 	},
 	"T91":{
-		"T91":[],
 		"RT91":[],
+		"T91":[]
 	},
 	"TAC50":{
 		"RTAC50":[],
@@ -1805,137 +1136,77 @@ var girlsData = {
 		"tanuki":[]
 	},
 	"TAR21":{
-		"TAR21":[],
 		"RTAR21":[],
-		"TAR21_1305":[],
-		"RTAR21_1305":{
-			"png":"TAR21_1305",
-			"atlas":"TAR21_1305"
-		}
+		"TAR21":[],
+		"TAR21_1305":[]
 	},
 	"Tarantula":{
 		"Tarantula":[]
 	},
 	"Theresa":{
-		"Theresa":[],
-		"RTheresa":[]
-	},
-	"tec9":{
-		"TEC9":[],
-		"RTEC9":{
-			"png":"TEC9",
-			"atlas":"TEC9"
-		}
+		"Theresa":[]
 	},
 	"Thunder50":{
+		"RThunder50_2206":[],
 		"Thunder50":[],
-		"RThunder50":[],
-		"Thunder50_2206":[],
-		"RThunder50_2206":[]
+		"Thunder50_2206":[]
 	},
 	"TMP":{
-		"TMP":[],
 		"RTMP":[],
-		"TMP_2807":[],
-		"RTMP_2807":{
-			"png":"TMP_2807",
-			"atlas":"TMP_2807"
-		},
-		"TMP_event":{
-			"png":"TMP",
-			"atlas":"TMP"
-		}
+		"TMP":[]
 	},
 	"TT33":{
-		"TT33":[],
 		"RTT33":[],
-		"TT33_601":[],
-		"RTT33_601":[]
-	},
-	"Type03":{
-		"Type03":[],
-		"RType03":{
-			"png":"Type03",
-			"atlas":"Type03"
-		}
-	},
-	"Type64-AR":{
-		"Type64-AR":[],
-		"RType64-AR":{
-			"png":"Type64-AR",
-			"atlas":"Type64-AR"
-		},
-		"Type64-AR_2901":[],
-		"RType64-AR_2901":{
-			"png":"Type64-AR_2901",
-			"atlas":"Type64-AR_2901"
-		}
+		"RTT33_601":[],
+		"TT33":[],
+		"TT33_601":[]
 	},
 	"Type100":{
-		"Type100":[],
-		"RType100":[],
-		"Type100_2903":[],
-		"RType100_2903":{
-			"png":"Type100_2903",
-			"atlas":"Type100_2903"
-		},
-	},
-	"UMP9":{
-		"ump9":[],
-		"Rump9":[],
-		"ump9_409":[],
-		"Rump9_409":[],
-		"UMP9_2106":[],
-		"RUMP9_2106":[],
+		"Type100":[]
 	},
 	"UMP40":{
-		"UMP40":[],
 		"RUMP40":[],
+		"UMP40":[]
 	},
 	"UMP45":{
-		"UMP45":[],
 		"RUMP45":[],
-		"UMP45_410":[],
+		"rump45_2107":[],
 		"RUMP45_410":[],
-		"UMP45_521":[],
-		"RUMP45_521":{
-			"png":"UMP45_521",
-			"atlas":"UMP45_521"
-		},
-		"UMP45_2107":[],
-		"RUMP45_2107":[],
+		"UMP45":[],
+		"ump45_2107":[],
+		"UMP45_410":[]
 	},
-	"UMP45Mod":{
-		"UMP45Mod":[],
-		"RUMP45Mod":[]
+	"ump9":{
+		"Rump9":[],
+		"rump9_2106":[],
+		"Rump9_409":[],
+		"ump9":[],
+		"ump9_2106":[],
+		"ump9_409":[]
 	},
 	"USAS12":{
 		"RUSAS12":[],
 		"USAS12":[]
 	},
 	"USPCompact":{
-		"USPCompact":[],
-		"RUSPCompact":[]
+		"RUSPCompact":[],
+		"USPCompact":[]
 	},
 	"Vector":{
-		"Vector":[],
 		"RVector":[],
-		"Vector_2":[],
 		"RVector_2":[],
+		"Vector":[],
 		"Vector_1901":[],
-		"RVector_1901":{
-			"png":"Vector_1901",
-			"atlas":"Vector_1901"
-		},
+		"Vector_2":[]
 	},
 	"Vespid":{
 		"Vespid":[]
 	},
 	"VZ61":{
-		"VZ61":[],
 		"RVZ61":[],
-		"VZ61_801":[],
 		"RVZ61_801":[],
+		"VZ61":[],
+		"VZ61_801":[]
 	},
 	"WA2000":{
 		"RWA2000":[],
@@ -1949,401 +1220,444 @@ var girlsData = {
 		"WA2000_6":[],
 		"WA2000_804":[]
 	},
+	"Weaver":{
+		"Weaver":[]
+	},
 	"WeaverElite":{
 		"WeaverElite":[]
 	},
 	"Welrod":{
-		"Welrod":[],
 		"RWelrod":[],
-		"Welrod_411":[],
+		"rwelrod_2103":[],
 		"RWelrod_411":[],
+		"Welrod":[],
 		"Welrod_1401":[],
-		"RWelrod_1401":[],
-		"Welrod_2103":[],
-		"RWelrod_2103":[]
+		"welrod_2103":[],
+		"Welrod_411":[]
 	},
 	"wz29":{
-		"wz29":[],
 		"Rwz29":[],
+		"wz29":[]
 	},
 	"XM3":{
-		"XM3":[],
 		"RXM3":[],
+		"XM3":[]
 	},
 	"XM8":{
-		"XM8":[],
-		"RXM8":[]
+		"XM8":[]
 	},
 	"Z62":{
-		"Z62":[],
 		"RZ62":[],
+		"Z62":[]
 	},
 	"ZastavaM21":{
-		"ZastavaM21":[],
 		"RZastavaM21":[],
-		"ZastavaM21_1603":[],
 		"RZastavaM21_1603":[],
-		"ZastavaM21_2104":[],
-		"RZastavaM21_2104":[],
+		"rzastavam21_2104":[],
+		"ZastavaM21":[],
+		"ZastavaM21_1603":[],
+		"zastavam21_2104":[]
 	}
 };
 var girlsOptions = {
 	"HG":{
-		"59type":"59식",
-		"92type":"92식",
-		"357":"아스토라 리볼버",
-		"APS":"스테츠킨",
-		"BB_Noel":"노엘",
-		"BrenTen":"Bren Ten",
-		"C96":"C96",
-		"CLEAR":"클리어",
-		"Contender":"컨텐더",
-		"CZ52":"CZ52",
-		"CZ75":"CZ75",
-		"FAIL":"페일",
-		"FN57":"Five-seveN",
-		"FNP9":"FNP-9",
-		"Glock17":"글록 17",
-		"Grizzly":"그리즐리 MkⅤ",
-		"GSH18":"GSh-18",
-		"HK45":"HK45",
-		"Jericho":"제리코",
-		"K5":"K5",
-		"Kiana":"키아나",
-		"M9":"M9",
-		"M950A":"M950A",
-		"M1873":"콜트 리볼버",
-		"M1873Mod":"콜트 리볼버 Mod",
-		"M1895":"나강 리볼버",
-		"M1895Mod":"나강 리볼버 Mod",
+		"M1873":"柯爾特左輪",
 		"M1911":"M1911",
-		"M1911Mod":"M1911 Mod",
-		"Mk23":"Mk23",
-		"MP443":"MP-443",
-		"MP446":"MP-446",
-		"MP446Mod":"MP-446 Mod",
-		"MP448":"MP-448",
-		"NZ75":"NZ75",
-		"P7":"P7",
-		"P08":"P08",
+		"M9":"M9",
+		"M1895":"納甘左輪",
+		"TT33":"托卡列夫",
+		"APS":"斯捷奇金",
+		"PM":"馬卡洛夫",
 		"P38":"P38",
-		"P99":"P99",
-		"P226":"P226",
-		"PM":"마카로프",
 		"PPK":"PPK",
-		"PSM":"PSM",
-		"Px4Storm":"Px4 스톰",
-		"Python":"파이썬",
-		"Spitfire":"Spitfire",
+		"P08":"P08",
+		"C96":"C96",
+		"92type":"92式",
+		"357":"阿斯特拉左輪",
+		"Glock17":"格洛克17",
+		"FNP9":"FNP-9",
+		"MP446":"MP-446",
+		"Grizzly":"灰熊MkⅤ",
+		"M950A":"M950A",
 		"SPP1":"SPP-1",
-		"SPS":"세르듀코프",
-		"tec9":"TEC-9",
-		"Theresa":"테레사",
-		"Thunder50":"썬더",
-		"TT33":"토카레프",
+		"Mk23":"Mk23",
+		"P7":"P7",
+		"SPS":"謝爾久科夫",
+		"Welrod":"維爾德MkⅡ",
+		"P99":"P99",
+		"NZ75":"NZ75",
+		"59type":"59式",
+		"BrenTen":"Bren Ten",
+		"PSM":"PSM",
 		"USPCompact":"USP Compact",
-		"Welrod":"웰로드 MkⅡ",
+		"FN57":"Five-seveN",
+		"CZ75":"CZ75",
+		"HK45":"HK45",
+		"Spitfire":"Spitfire",
+		"Contender":"競爭者",
+		"P226":"P226",
+		"Thunder50":"雷电",
+		"CZ52":"CZ52",
+		"K5":"K5",
+		"MP443":"MP-443",
+		"GSH18":"GSh-18",
+		"BB_Noel":"诺爱儿 梵密利欧",
+		"Kiana":"琪亚娜 卡斯兰娜",
+		"Theresa":"德丽莎 阿波卡利斯",
+		"CLEAR":"克莉尔",
+		"FAIL":"菲尔",
+		"M1911Mod":"M1911 Mod",
+		"M1895Mod":"納甘左輪 Mod",
+		"MP446Mod":"MP-443 Mod"
 	},
 	"SMG":{
-		"64type":"64식",
-		"64typeMod":"64식 Mod",
-		"79type":"79식",
-		"AK74U":"AK-74U",
-		"CBJMS":"C-MS",
-		"ColtSCW":"SCW",
-		"Cx4Storm":"Cx4 스톰",
-		"EVO3":"EVO 3",
-		"F1":"F1",
-		"FMG9":"FMG-9",
-		"G36C":"G36C",
-		"IDW":"IDW",
-		"IDWMod":"IDW Mod",
-		"JS9mm":"JS 9",
-		"K7":"K7",
-		"KLIN":"KLIN",
-		"KP31":"수오미",
+		"M1928A1":"湯姆森",
 		"M3":"M3",
-		"M12":"M12",
-		"m45":"m45",
-		"M1928A1":"톰슨",
-		"MAB38":"베레타 38형",
 		"MAC10":"MAC-10",
-		"MicroUZI":"마이크로 우지",
-		"MP5":"MP5",
-		"MP7":"MP7",
-		"MP40":"MP40",
-		"MT9":"MT-9",
-		"OTs39":"OTs-39",
-		"P90":"P90",
-		"PDW":"허니뱃저",
-		"PP19":"PP-19",
-		"PP90":"PP-90",
-		"PP1901":"PP-19-01",
-		"PP2000":"PP-2000",
-		"PPS43":"PPS-43",
+		"FMG9":"FMG-9",
+		"Vector":"Vector",
 		"PPsh41":"PPSh-41",
-		"RO635":"RO635",
-		"Shipka":"시프카",
+		"PPS43":"PPS-43",
+		"PP90":"PP-90",
+		"PP2000":"PP-2000",
+		"MP40":"MP40",
+		"MP5":"MP5",
+		"VZ61":"蠍式",
+		"MP7":"MP7",
+		"StenMK2":"司登MkⅡ",
+		"MAB38":"伯萊塔38型",
+		"MicroUZI":"微型烏茲",
+		"m45":"m45",
 		"SpectreM4":"Spectre M4",
-		"SR3MP":"SR-3MP",
-		"StenMK2":"스텐 MkⅡ",
-		"StenMK2Mod":"스텐 MkⅡ Mod",
-		"T77":"T77",
-		"TMP":"TMP",
-		"Type100":"100식",
-		"UMP9":"UMP9",
+		"IDW":"IDW",
+		"64type":"64式",
+		"ump9":"UMP9",
 		"UMP40":"UMP40",
 		"UMP45":"UMP45",
-		"UMP45Mod":"UMP45 Mod",
-		"Vector":"Vector",
-		"VZ61":"스콜피온",
+		"G36C":"G36C",
+		"KP31":"索米",
 		"Z62":"Z-62",
+		"79type":"79式",
+		"EVO3":"EVO 3",
+		"SR3MP":"SR-3MP",
+		"PP19":"PP-19",
+		"PP1901":"PP-19-01",
+		"RO635":"RO635",
+		"MT9":"MT-9",
+		"Shipka":"希普卡",
+		"ColtSCW":"SCW",
+		"TMP":"TMP",
+		"KLIN":"KLIN",
+		"F1":"F1",
+		"M12":"M12",
+		"PDW":"蜜獾",
+		"OTs39":"OTs-39",
+		"CBJMS":"C-MS",
+		"T77":"T77",
+		"IDWMod":"IDW Mod",
+		"64typeMod":"64式 Mod"
 	},
 	"AR":{
-		"6P62":"6P62",
-		"9A91":"9A-91",
-		"56-1type":"56-1식",
-		"63type":"63식",
-		"95type":"95식",
-		"97type":"97식",
-		"A91":"A-91",
-		"AK5":"AK5",
-		"AK12":"AK12",
-		"ak12_motor":"AK12 Motor",
-		"AK47":"AK-47",
-		"AN94":"AN94",
-		"an94_motor":"AN94 Motor",
-		"AR":"갈릴",
-		"AR15":"ST AR-15",
-		"ar15_motor":"AR15 Motor",
-		"AR15Mod":"ST AR-15 Mod",
-		"AR70":"AR70",
-		"ART556":"ART556",
-		"ARX160":"ARX-160",
-		"Ash127":"ASh-12.7",
-		"ASVAL":"AS Val",
-		"AUG":"AUG",
-		"CETME556":"Model L",
-		"CZ805":"CZ-805",
-		"CZ2000":"CZ2000",
-		"F2000":"F2000",
-		"FAMAS":"FAMAS",
-		"FNFAL":"FAL",
-		"FNFNC":"FNC",
-		"G3":"G3",
-		"G3Mod":"G3 Mod",
-		"G11":"G11",
-		"G36":"G36",
-		"G36Mod":"G36 Mod",
-		"G41":"G41",
-		"Himeko":"히메코",
-		"HK416":"HK416",
-		"K2":"K2",
-		"K11":"K11",
-		"L85A1":"L85A1",
-		"M4 SOPMOD II":"M4 SOPMOD II",
-		"M4 SOPMOD IIMod":"M4 SOPMOD II Mod",
-		"M4A1":"M4A1",
-		"M4A1Mod":"M4A1 Mod",
 		"M16A1":"M16A1",
-		"MDR":"MDR",
-		"OTs12":"OTs-12",
-		"OTs14":"OTs-14",
-		"RFB":"RFB",
-		"Ribeyrolles":"리베롤",
-		"SAR21":"SAR-21",
-		"SIG510":"SIG-510",
+		"M4A1":"M4A1",
+		"M4 SOPMOD II":"M4 SOPMOD II",
+		"AR15":"ST AR-15",
+		"AK47":"AK-47",
+		"ASVAL":"AS Val",
 		"STG44":"StG44",
-		"T65":"T65",
-		"T91":"T91",
+		"G41":"G41",
+		"G3":"G3",
+		"G36":"G36",
+		"HK416":"HK416",
+		"56-1type":"56-1式",
+		"L85A1":"L85A1",
+		"FAMAS":"FAMAS",
+		"FNFNC":"FNC",
+		"AR":"加利爾",
 		"TAR21":"TAR-21",
-		"Type03":"03식",
-		"Type64-AR":"64식 소총",
-		"Type100":"100식",
-		"XM8":"XM8",
+		"AUG":"AUG",
+		"SIG510":"SIG-510",
+		"OTs12":"OTs-12",
+		"FNFAL":"FAL",
+		"F2000":"F2000",
+		"CZ805":"CZ-805",
+		"9A91":"9A-91",
+		"OTs14":"OTs-14",
+		"ARX160":"ARX-160",
+		"G11":"G11",
+		"95type":"95式",
+		"97type":"97式",
+		"63type":"63式",
+		"AR70":"AR70",
+		"6P62":"6P62",
+		"Ash127":"ASh-12.7",
+		"Ribeyrolles":"利貝羅勒",
+		"RFB":"RFB",
+		"ART556":"ART556",
+		"T91":"T91",
+		"AK5":"AK5",
+		"T65":"T65",
+		"K2":"K2",
 		"ZastavaM21":"Zas M21",
+		"AN94":"AN94",
+		"AK12":"AK12",
+		"CZ2000":"CZ2000",
+		"MDR":"MDR",
+		"XM8":"XM8",
+		"Himeko":"无量塔姬子",
+		"M4A1Mod":"M4A1 Mod",
+		"AR15Mod":"ST AR-15 Mod",
+		"Type100":"Type100"
 	},
 	"RF":{
-		"56typeR":"56식 반",
-		"81typeR":"81식 카빈",
-		"88type":"한양조 88식",
-		"98K":"Kar98k",
-		"Ballista":"발리스타",
-		"BM59":"BM59",
-		"Bronya":"브로냐 자이칙",
-		"Carcano1891":"카르카노M1891",
-		"Carcano1938":"카르카노M91/38",
-		"DSR50":"DSR-50",
-		"DTASRS":"SRS",
-		"FN49":"FN-49",
-		"FN49Mod":"FN-49 Mod",
-		"G28":"G28",
-		"G43":"G43",
-		"GepardM1":"게파드M1",
-		"HEZISM1":"SM-1",
-		"IWS2000":"IWS 2000",
-		"JS-127":"JS05",
-		"M1":"M1 개런드",
-		"M14":"M14",
-		"M1891":"모신나강",
-		"M1891Mod":"모신나강 Mod",
-		"M1903":"스프링필드",
+		"M1":"M1加蘭德",
 		"M1A1":"M1A1",
+		"M1903":"春田",
+		"M14":"M14",
 		"M21":"M21",
-		"M99":"M99",
-		"MLEMK1":"리엔필드",
-		"NTW20":"NTW-20",
-		"OC44":"OTs-44",
-		"PSG1":"PSG-1",
-		"PTRD":"PTRD",
-		"PZB39":"PzB39",
-		"RaidenMei":"라이덴 메이",
-		"SKS":"시모노프",
-		"SSG69":"SSG 69",
-		"SuperSass":"Super SASS",
-		"SV98":"SV-98",
-		"SVD":"SVD",
+		"M1891":"莫辛-納甘",
 		"SVT38":"SVT-38",
-		"T5000":"T-5000",
-		"TAC50":"TAC-50",
+		"SKS":"西蒙諾夫",
+		"PTRD":"PTRD",
+		"SVD":"SVD",
+		"SV98":"SV-98",
+		"98K":"Kar98k",
+		"G43":"G43",
 		"WA2000":"WA2000",
+		"56typeR":"56式半",
+		"MLEMK1":"李-恩菲尔德",
+		"FN49":"FN-49",
+		"BM59":"BM59",
+		"NTW20":"NTW-20",
+		"88type":"漢陽造88式",
+		"PSG1":"PSG-1",
+		"SuperSass":"Super SASS",
+		"M99":"M99",
+		"OC44":"OTs-44",
+		"G28":"G28",
+		"SSG69":"SSG 69",
+		"IWS2000":"IWS 2000",
+		"81typeR":"八一式馬",
+		"DSR50":"DSR-50",
+		"PZB39":"PzB39",
 		"wz29":"wz.29",
+		"T5000":"T-5000",
+		"JS-127":"JS05",
+		"Carcano1891":"卡尔卡诺M1891",
+		"Carcano1938":"卡尔卡诺M91/38",
 		"XM3":"XM3",
+		"GepardM1":"杰帕德M1",
+		"Ballista":"芭莉斯塔",
+		"DTASRS":"SRS",
+		"HEZISM1":"SM-1",
+		"TAC50":"TAC-50",
+		"RaidenMei":"雷电芽衣",
+		"Bronya":"布洛妮娅 扎伊切克",
+		"M1891Mod":"莫辛-納甘 Mod",
+		"FN49Mod":"FN-49 Mod"
 	},
 	"MG":{
-		"80type":"80type",
-		"AAT52":"AAT-52",
-		"AEK999":"AEK-999",
-		"Ameli":"아멜리",
-		"BrenMK":"브렌",
-		"DP28":"DP28",
-		"FG42":"FG42",
-		"HK21":"HK21",
-		"HK23":"HK23",
-		"LWMMG":"LWMMG",
 		"M1918":"M1918",
-		"M1918Mod":"M1918 Mod",
-		"M1919A4":"M1919A4",
-		"M249SAW":"M249 SAW",
 		"M2HB":"M2HB",
 		"M60":"M60",
-		"MG3":"MG3",
-		"MG34":"MG34",
-		"MG4":"MG4",
-		"MG42":"MG42",
-		"MG5":"MG5",
-		"MK48":"Mk48",
-		"NEGEV":"네게브",
-		"PK":"PK",
-		"PKP":"PKP",
+		"M249SAW":"M249 SAW",
+		"M1919A4":"M1919A4",
+		"DP28":"DP28",
+		"LWMMG":"LWMMG",
 		"RPD":"RPD",
+		"PK":"PK",
+		"MG42":"MG42",
+		"MG34":"MG34",
+		"MG3":"MG3",
+		"BrenMK":"布伦",
+		"MG5":"MG5",
+		"FG42":"FG42",
+		"AAT52":"AAT-52",
+		"NEGEV":"內蓋夫",
+		"MK48":"Mk48",
+		"MG4":"MG4",
+		"AEK999":"AEK-999",
+		"BrenMK":"布倫",
+		"PKP":"PKP",
+		"Ameli":"阿梅利",
+		"HK23":"HK23",
+		"80type":"80type",
+		"HK21":"HK21",
+		"M1918Mod":"M1918 Mod"
 	},
 	"SG":{
-		"97typeS":"97식 산탄총",
-		"AA12":"AA-12",
-		"FP6":"FP-6",
-		"GG_elfeldt":"엘펠트",
-		"Ithaca37":"M37",
-		"KS23":"KS-23",
-		"KSG":"KSG",
-		"M1014":"M1014",
 		"M1887":"M1887",
 		"M1897":"M1897",
+		"Ithaca37":"M37",
 		"M500":"M500",
 		"M590":"M590",
-		"NS2000":"NS2000",
-		"RMB93":"RMB-93",
-		"S.A.T.8":"S.A.T.8",
-		"SAIGA12":"Saiga-12",
-		"Seele":"제레",
-		"SPAS12":"SPAS-12",
 		"SuperShorty":"Super-Shorty",
+		"KSG":"KSG",
+		"KS23":"KS-23",
+		"RMB93":"RMB-93",
+		"SAIGA12":"Saiga-12",
+		"97typeS":"97式霰",
+		"SPAS12":"SPAS-12",
+		"AA12":"AA-12",
+		"FP6":"FP-6",
+		"M1014":"M1014",
+		"S.A.T.8":"S.A.T.8",
 		"USAS12":"USAS12",
+		"NS2000":"NS2000",
+		"GG_elfeldt":"Elfeldt",
+		"Seele":"Seele"
 	},
 	"Ohter":{
-		"2b14":"2B14",
-		"aegis":"Aegis",
-		"aliasse":"Aliasse",
-		"bh2":"BH2",
-		"bossagent":"Agent",
-		"bossalchemist":"Alchemist",
-		"bossarchitect":"Architect",
-		"bossbeak":"Beak_M16",
-		"bosscerberus":"Cerberus",
-		"bossdestroyer":"Destroyer",
-		"bossdestroyerplus":"DestroyerPlus",
-		"bossdreamer":"dreamer",
-		"bossexcutioner":"Excutioner",
-		"ExcutionerElite":"ExcutionerElite",
-		"bossgager":"Gager",
-		"bosshunter":"Hunter",
-		"HunterElite":"HunterElite",
-		"bossintruder":"Intruder",
-		"bossjustice":"Justice",
-		"bossscarecrow":"Scarecrow",
-		"bossweaver":"Weaver",
-		"WeaverElite":"WeaverElite",
+		"Aegis":"Aegis",
+		"Alchemist":"Alchemist",
+		"Boss10":"Boss10",
+		"Boss8":"Boss8",
+		"Boss9":"Boss9",
 		"Brute":"Brute",
-		"cerynitis":"Cerynitis",
-		"cmboard":"CMboard",
-		"coffee":"coffee",
-		/*"coyote":"Coyote",*/
-		"cyclops":"Cyclops",
-		"dactyl":"Dactyl",
+		"CMboard":"CMboard",
+		"Cerberus":"Cerberus",
+		"Coyote":"Coyote",
+		"Destroyer":"Destroyer",
+		"DestroyerPlus":"DestroyerPlus",
 		"Dinergate":"Dinergate",
-		"doppelsoldner":"Doppelsoldner",
 		"Dragoon":"Dragoon",
 		"Drone":"Drone",
+		"Excutioner":"Excutioner",
+		"ExcutionerElite":"ExcutionerElite",
 		"Filegen":"Filegen",
-		"ghost":"Ghost",
+		"Fliegen2":"Fliegen2",
 		"Golyat":"Golyat",
+		"GolyatPlus":"GolyatPlus",
 		"Guard":"Guard",
+		"Hotspring":"Hotspring",
+		"Hunter":"Hunter",
+		"HunterElite":"HunterElite",
 		"ISC":"ISC",
+		"Intruder":"Intruder",
 		"Jaeger":"Jaeger",
 		"Jaguar":"Jaguar",
-		"jukebox":"Jukebox",
 		"Jupiter":"Jupiter",
-		"magicbook":"MagicBook",
+		"Kalina":"Kalina",
 		"Manticore":"Manticore",
-		"mercenary":"Strelet",
-		"Nemeum":"Nemeum",
 		"NPC_Kalina":"NPC_Kalina",
-		"nyto":"Nyto",
+		"Nemeum":"Nemeum",
 		"Prowler":"Prowler",
+		"RDinergate_chm1":"RDinergate_chm1",
+		"RDinergate_chm2":"RDinergate_chm2",
+		"Revo3":"Revo3",
+		"Rghost":"Rghost",
 		"Ripper":"Ripper",
+		"Scarecrow":"Scarecrow",
 		"Scouts":"Scouts",
 		"Striker":"Striker",
 		"Tarantula":"Tarantula",
 		"Vespid":"Vespid",
+		"Weaver":"Weaver",
+		"WeaverElite":"WeaverElite",
 		"ball":"ball",
 		"flyboat":"flyboat",
 		"liondance":"liondance",
 		"pet":"pet",
+		"rippling":"rippling",
 		"tanuki":"tanuki"
 	}
 };
 var girlsDataKr={
-	"aegis":"철혈 장갑 인형병",
+	"M1873":"콜트 리볼버",
+	"M1895":"나강 리볼버",
+	"APS":"스테츠킨",
+	"TT33":"토카레프",
+	"PM":"마카로프",
+	"92type":"92식",
+	"357":"아스트라 리볼버",
+	"Glock17":"글록 17",
+	"M1928A1":"톰슨",
+	"VZ61":"스콜피온",
+	"StenMK2":"스텐 MkII",
+	"MAB38":"베레타 38형",
+	"MicroUZI":"마이크로 우지",
+	"M1":"M1 개런드",
+	"M1903":"스프링필드",
+	"M1891":"모신나강",
+	"SKS":"시모노프",
+	"56typeR":"56식 반",
+	"MLEMK1":"리엔필드",
+	"56-1type":"56-1식",
+	"AR":"갈릴",
+	"BrenMK":"브렌",
+	"64type":"64식",
+	"88type":"한양조 88식",
+	"Grizzly":"그리즐리 MkV",
+	"NEGEV":"네게브",
+	"SPS":"세르듀코프",
+	"Welrod":"웰로드 MkII",
+	"KP31":"수오미",
+	"79type":"79식",
+	"95type":"95식",
+	"97type":"97식",
+	"59type":"59식",
+	"63type":"63식",
+	"Shipka":"시프카",
+	"97typeS":"97식 산탄총",
+	"Ribeyrolles":"리베롤",
+	"81typeR":"81식 카빈",
+	"Contender":"컨텐더",
+	"Ameli":"아멜리",
+	"Carcano1891":"카르카노1891",
+	"Carcano1938":"카르카노M91/38",
+	"80type":"80식",
+	"GepardM1":"게파드M1",
+	"Thunder50":"썬더",
+	"PDW":"허니뱃저",
+	"Ballista":"발리스타",
+ 	"BB_Noel":"노엘 버밀리온",
+	"GG_elfeldt":"엘펠트 발렌타인",
+	"Kiana":"키아나 카스라나",
+	"RaidenMei":"라이덴 메이",
+	"Bronya":"브로냐 자이칙",
+	"Theresa":"테레사 아포칼립스",
+	"Himeko":"무라타 히메코",
+	"Seele":"제레 발레리",
+	"CLEAR":"엘 클리어",
+	"FAIL":"엘 페일",
+	"M1895Mod":"나강 리볼버 Mod",
+	"M1891Mod":"모신나강 Mod",
+	"64typeMod":"64식 Mod",
+	"Aegis":"철혈 장갑 인형병",
+	"Alchemist":"알케미스트",
+	"Boss10":"드리머",
+	"Boss8":"게이저",
+	"Boss9":"아키텍트",
 	"Brute":"브루트",
+	"Cerberus":"가름",
+	"Destroyer":"디스트로이어",
 	"DestroyerPlus":"디스트로이어 엘리트 소체",
 	"Dinergate":"정찰견",
 	"Dragoon":"드라군",
 	"Drone":"훈련용 표적",
+	"Excutioner":"엑스큐셔너",
 	"ExcutionerElite":"엑스큐셔너 엘리트 소체",
 	"Golyat":"자폭병",
 	"GolyatPlus":"강화 자폭병",
 	"Guard":"가드",
+	"Hunter":"헌터",
 	"HunterElite":"헌터 엘리트 소체",
+	"Intruder":"인트루더",
 	"Jaeger":"예거",
 	"Jaguar":"박격포",
 	"Jupiter":"철혈식 복제형 정규군 야포",
 	"Manticore":"철혈식 노획형 정규군 장갑 기갑",
 	"Nemeum":"철혈 시제 중장 단포",
+	"Prowler":"순찰기",
 	"Ripper":"리퍼",
+	"Scarecrow":"스케어크로우",
 	"Scouts":"정찰기",
 	"Striker":"스트라이커",
 	"Tarantula":"장갑수색견",
 	"Unknown":"알 수 없음",
+	"Uroboros":"우로보로스",
 	"Vespid":"베스피드",
+	"Weaver":"우로보로스",
 	"WeaverElite":"우로보로스 엘리트 소체",
+	"Kalina":"카리나"
 };
