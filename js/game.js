@@ -120,6 +120,7 @@ var app = new Vue({
 			isShowFPS: true,
 			resPasePath:"",
 			girlsData : girlsData,
+			SkillName : SkillName,
 			timeVal : [],
 			girls : {},
 			preview: {
@@ -135,7 +136,7 @@ var app = new Vue({
 		},
 		methods: {
 			changeCanvas: function(skeletonData){
-				let preview=this.preview;
+				let preview=this.preview,stringAnimations="",nowSkin=0,i;
 				preview.selectAnimation=this.$children[2].$el.querySelector("select");
 				preview.stage.removeChildren();
 				preview.name=skeletonData.name;
@@ -145,47 +146,10 @@ var app = new Vue({
 					preview.spine.y=preview.selectY,
 					preview.spine.scale.x=preview.selectScale,
 					preview.spine.scale.y=preview.selectScale;
-				let stringAnimations="",nowSkin=0,i,
-					Case={
-						"attack":"공격",
-						"attack2":"보조공격",
-						"spattack":"스킬",
-						"bossskill":"스킬",
-						"bossskillactive":"스킬발동",
-						"s":"스킬",
-						"sp":"스킬",
-						"sp1":"특수행동1",
-						"reload":"재장전",
-						"victory":"승리",
-						"victory2":"승리2",
-						"victoryloop":"승리Loop",
-						"die":"사망",
-						"die2":"사망2",
-						"die3":"사망3",
-						"move":"이동",
-						"wait":"대기",
-						"wait2":"대기2",
-						"wait22":"대기22",
-						"lying":"휴식",
-						"sit":"앉기",
-						"pick":"들어올리기",
-						"work1":"행동1",
-						"work2":"행동2",
-						"action":"행동",
-						"action1":"행동1",
-						"action2":"행동2",
-						"action3":"행동3",
-						"dance1":"춤1",
-						"dance2":"춤2",
-						"dance3":"춤3",
-						"change1":"변화1",
-						"change2":"변화2",
-						"change3":"변화3",
-					};
 				for(i of preview.spine.spineData.animations){
 					if(i.name=="animation") continue;
-					if(Object.keys(Case).includes(i.name)){
-						i.name=Case[i.name]
+					if(Object.keys(this.SkillName).includes(i.name)){
+						i.name=this.SkillName[i.name]
 					}else{
 						i.name=i.name
 					};
@@ -267,12 +231,12 @@ var app = new Vue({
 			loadToStage: function(defaultStageData,spineData){
 				for(i of defaultStageData){
 					let spine=spineData[i.name][i.skin];
-						spine.code=i.name,
-						spine.skin=i.skin,
-						spine.x=i.x,
-						spine.y=i.y,
-						spine.scale=i.scale,
-						spine.animation=i.animation;
+					spine.code=i.name,
+					spine.skin=i.skin,
+					spine.x=i.x,
+					spine.y=i.y,
+					spine.scale=i.scale,
+					spine.animation=i.animation;
 					this.AddRoleTogameview(spine,i.animation)
 				}
 			},
@@ -339,7 +303,7 @@ var app = new Vue({
 			},
 			savePng: function(){
 				this.gameview.renderer.extract.canvas(this.gameview.stage).toBlob(b=>{
-					var a=document.createElement("a");
+					let a=document.createElement("a");
 					document.body.append(a);
 					a.download=`screenshot.png`,a.href=URL.createObjectURL(b);
 					a.click(),a.remove()
@@ -353,12 +317,12 @@ var app = new Vue({
 			},
 			AddRoleTogameview: function(skeletonData,selectedAnimation){
 				let gameview=this.gameview,preview=this.preview,
-					role=this.gameview.role[gameview.role.length]=new PIXI.spine.Spine(skeletonData),name=skeletonData.name;
+					role=gameview.role[gameview.role.length]=new PIXI.spine.Spine(skeletonData),name=skeletonData.name;
 					mynum=gameview.role.length-1,
 					scale=skeletonData.scale||gameview.selectScale,isMirror=false;
 					gameview.selectposX.value=skeletonData.x||gameview.selectX,
 					gameview.selectposY.value=skeletonData.y||gameview.selectY,
-					gameview.role[mynum].interactive=true;
+					gameview.role[mynum].interactive=true,
 					gameview.role[mynum].buttonMode=true;
 				this.timeVal[gameview.selectCharacter.selectedIndex]=1;
 				if(scale<0){
@@ -369,44 +333,8 @@ var app = new Vue({
 				gameview.focusRole=role;
 				let stringAnimations="",defaultAnimationId=app.SelectMotion,i,alphabet = "abcdefghijklmnopqrstuvwxyz";
 				if(alphabet.includes(role.spineData.animations[0].name.slice(0,1).toLowerCase())){
-					let Case={
-						"attack":"공격",
-						"attack2":"보조공격",
-						"spattack":"스킬",
-						"bossskill":"스킬",
-						"bossskillactive":"스킬발동",
-						"s":"스킬",
-						"sp":"스킬",
-						"sp1":"특수행동1",
-						"reload":"재장전",
-						"victory":"승리",
-						"victory2":"승리2",
-						"victoryloop":"승리Loop",
-						"die":"사망",
-						"die2":"사망2",
-						"die3":"사망3",
-						"move":"이동",
-						"wait":"대기",
-						"wait2":"대기2",
-						"wait22":"대기22",
-						"lying":"휴식",
-						"sit":"앉기",
-						"pick":"들어올리기",
-						"work1":"행동1",
-						"work2":"행동2",
-						"action":"행동",
-						"action1":"행동1",
-						"action2":"행동2",
-						"action3":"행동3",
-						"dance1":"춤1",
-						"dance2":"춤2",
-						"dance3":"춤3",
-						"change1":"변화1",
-						"change2":"변화2",
-						"change3":"변화3",
-					};
 					for(i of role.spineData.animations){
-						i.name=Case[i.name]
+						i.name=this.SkillName[i.name];
 						if(i.name == selectedAnimation){
 							defaultAnimationId=role.spineData.animations.indexOf(i)
 						}
@@ -446,8 +374,8 @@ var app = new Vue({
 				gameview.selectCharacter.selectedIndex=gameview.role.length;
 				gameview.stage.addChild(role);
 				var mynum=gameview.role.length-1;
-					gameview.role[mynum].interactive=true;
-					gameview.role[mynum].buttonMode=true;
+				gameview.role[mynum].interactive=true;
+				gameview.role[mynum].buttonMode=true;
 				role.on('pointerdown',DragStart)
 					.on('pointerup',DragEnd)
 					.on('pointerupoutside',DragEnd)
@@ -484,7 +412,6 @@ var app = new Vue({
 			},
 			TimeStop: function(e){
 				let gameview=this.gameview,charOn=gameview.selectCharacter.selectedIndex,button=e.target,selector=gameview.role[charOn-1].state.tracks[0];
-				gameview=this.gameview;
 				if(charOn==0) return;
 				if(selector==null) return;
 				if(selector.timeScale==1){
@@ -517,14 +444,14 @@ var app = new Vue({
 				TimeStopper.classList.remove("btn-success")
 			},
 			RemoveAllRole: function(){
-				let i,gameview=this.gameview;
+				let gameview=this.gameview;
 				gameview.stage.children=gameview.stage.children.slice(0,2);
 				gameview.selectCharacter.innerHTML=`<option>인형을 선택하세요</option>`;
 				gameview.selectAnimation.innerHTML=`<option>모션이 표시됩니다.</option>`;
 				gameview.role=[];
 				gameview.focusRole=null
 			},
-			StopRole: function(e){
+			AllStopRole: function(e){
 				let gameview=this.gameview,button=e.target,charOn=gameview.selectCharacter.selectedIndex;
 				if(charOn==0) return;
 				if(gameview.isUpdate){
@@ -583,7 +510,7 @@ var app = new Vue({
 				stageLoaded=true
 			};
 			if(window.location.hash&&stageLoaded==false){
-				var hash=window.location.hash.substring(1);
+				let hash=window.location.hash.substring(1);
 				this.loadStage(hash);
 				stageLoaded=true
 			};

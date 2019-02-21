@@ -29,7 +29,7 @@ if(userAgent.indexOf('trident')>-1){alert("Internet Explorer 는 WebGL을 지원
 </head>
 <body>
 <div id="app" class="Container p-0 mx-auto row no-gutters">
-<header class="mx-auto my-3 d-none d-md-block"><h2>Girls' FrontLine Spine Simulator</h2></header>
+<header class="mx-auto my-3 d-none d-md-block"><h2>소녀전선 숙소/치비 SD시뮬레이터</h2></header>
 <nav class="controlUi my-3 my-md-1 row no-gutters">
 <div class="preCanvas Canvas col-4"></div>
 <div class="preUI mx-3 col">
@@ -75,7 +75,7 @@ if(userAgent.indexOf('trident')>-1){alert("Internet Explorer 는 WebGL을 지원
 </div>
 <div class="btn-group btn-group-sm float-right">
 <button type="button" class="btn btn-secondary" @click="RemoveAllRole">인형 모두제거</button>
-<button type="button" class="btn btn-secondary" @click="StopRole">인형 모션정지</button>
+<button type="button" class="btn btn-secondary" @click="AllStopRole">인형 모션정지</button>
 <button type="button" class="btn btn-primary" @click="savePng">이미지 저장하기</button>
 <button type="button" class="btn btn-primary" @click="saveStage">주소 복사</button>
 </div>
