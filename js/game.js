@@ -1,7 +1,7 @@
 Vue.component("form-sm",{
 	props: ["txt","id","val"],
+	//셀렉트 템플릿에서 '선택하세요' 옵션 제거 : 무의미함
 	template: `<div class="form-group"><label>{{ txt }}</label><select class="custom-select" :value=val @input=changes(id)>
-		<option>선택하세요</option>
 		<optgroup v-if="id == 'doll'" v-for="(type, value) in girlsOptions" :label="value">
 			<option v-for="(name, doll) in type" :value="doll">
 				{{ girlsDataKr[doll]?girlsDataKr[doll]:name }}

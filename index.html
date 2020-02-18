@@ -1,100 +1,113 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>36베이스 - 소녀전선 숙소/치비 SD시뮬레이터</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/css.css">
-<!-- 36Base 용 Original Source -->
-<link href="../../data/img/g36/32bnonclear.png" rel="apple-touch-icon" />
-<link href="../../data/img/g36/128bnonclear.png" rel="apple-touch-icon" sizes="128x128" />
-<link href="../../data/img/g36/256bnonclear.png" rel="apple-touch-icon" sizes="256x256" />
-<link href="../../data/img/g36/256bnonclear.png" rel="icon" sizes="256x256" />
-<link href="../../data/img/g36/128bnonclear.png" rel="icon" sizes="128x128" />
-<link rel="shortcut icon" type="image/x-icon" href="../../data/img/g36/32bnonclear.png">
-<!-- 36Base 용 Original Source -->
-<meta name="keywords" content="소녀전선,소전,GLF,girls'frontline,db,database,디비,데이터베이스,시뮬레이터,simulator">
-<!-- 36Base 용 Original Source -->
-<meta property="og:title" content="36베이스 - 소녀전선 숙소/치비 SD시뮬레이터">
-<meta property="og:type" content="website">
-<meta property="og:description" content="36베이스 - 소녀전선 숙소/치비 SD시뮬레이터">
-<!-- 36Base 용 Original Source -->
-<!-- IE alert -->
-<script>
-var userAgent = navigator.userAgent.toLowerCase(); //빠른 구별 위해 소문자로만 출력
-if(userAgent.indexOf('trident')>-1){alert("Internet Explorer 는 WebGL을 지원하지 않습니다.\nMicrosoft Edge, Google Chrome, Mozilla Firefox, Opera  를 이용해 주세요.")};
-</script>
-<!-- EXIT alert -->
-<script>window.onbeforeunload=e=>"사이트에서 나가시겠습니까?\n변경사항이 저장되지 않습니다."</script>
+	<meta charset="UTF-8">
+	<title>36베이스 - 소녀전선 숙소/치비 SD시뮬레이터</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/css.css">
+	<!-- 36Base 용 Original Source -->
+	<link href="../../data/img/g36/32bnonclear.png" rel="apple-touch-icon"/>
+	<link href="../../data/img/g36/128bnonclear.png" rel="apple-touch-icon" sizes="128x128"/>
+	<link href="../../data/img/g36/256bnonclear.png" rel="apple-touch-icon" sizes="256x256"/>
+	<link href="../../data/img/g36/256bnonclear.png" rel="icon" sizes="256x256"/>
+	<link href="../../data/img/g36/128bnonclear.png" rel="icon" sizes="128x128"/>
+	<link rel="shortcut icon" type="image/x-icon" href="../../data/img/g36/32bnonclear.png">
+	<!-- 36Base 용 Original Source -->
+	<meta name="keywords" content="소녀전선,소전,GLF,girls'frontline,db,database,디비,데이터베이스,시뮬레이터,simulator">
+	<!-- 36Base 용 Original Source -->
+	<meta property="og:title" content="36베이스 - 소녀전선 숙소/치비 SD시뮬레이터">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="36베이스 - 소녀전선 숙소/치비 SD시뮬레이터">
+	<!-- 36Base 용 Original Source -->
+	<!-- IE alert -->
+	<script>
+		var userAgent = navigator.userAgent.toLowerCase(); //빠른 구별 위해 소문자로만 출력
+		if(userAgent.indexOf("trident") > -1){
+			alert("Internet Explorer 는 WebGL을 지원하지 않습니다.\nMicrosoft Edge, Google Chrome, Mozilla Firefox, Opera  를 이용해 주세요.");
+		}
+		;
+	</script>
+	<!-- EXIT alert -->
+	<script>window.onbeforeunload = e => "사이트에서 나가시겠습니까?\n변경사항이 저장되지 않습니다.";</script>
 </head>
 <body>
-<div id="app" class="Container p-0 mx-auto row no-gutters">
-<header class="mx-auto my-3 d-none d-md-block"><h2>소녀전선 숙소/치비 SD시뮬레이터</h2></header>
-<nav class="controlUi my-3 my-md-1 row no-gutters">
-<div class="preCanvas Canvas col-4"></div>
-<div class="preUI mx-3 col">
-<form-sm txt="인형" id="doll"></form-sm>
-<form-sm txt="스킨" id="skin"></form-sm>
-<form-sm txt="모션" id="motion"></form-sm>
-<div class="text-center">
-	<div class="btn-group btn-group-sm">
-		<button type="button" class="btn btn-primary" @click="AddRole">투입</button>
-		<button type="button" class="btn btn-secondary" @click="StopRole">정지</button>
+	<div id="app" class="Container p-0 mx-auto row no-gutters">
+		<header class="mx-auto my-3 d-none d-md-block"><h2>소녀전선 숙소/치비 SD시뮬레이터</h2></header>
+		<nav class="controlUi my-3 my-md-1 row no-gutters">
+			<div class="preCanvas Canvas col-4"></div>
+			<div class="preUI mx-3 col">
+				<form-sm txt="인형" id="doll"></form-sm>
+				<form-sm txt="스킨" id="skin"></form-sm>
+				<form-sm txt="모션" id="motion"></form-sm>
+				<div class="text-center">
+					<div class="btn-group btn-group-sm">
+						<button type="button" class="btn btn-primary" @click="AddRole">투입</button>
+						<button type="button" class="btn btn-secondary" @click="StopRole">정지</button>
+					</div>
+				</div>
+			</div>
+			<div class="gameview col-5">
+				<div class="charOptions">
+					<char-op txt="인형" id="GameDoll"></char-op>
+					<char-op txt="모션" id="GameMotion"></char-op>
+					<char-op txt="X축" id="SelectposX"></char-op>
+					<char-op txt="Y축" id="SelectposY"></char-op>
+					<char-op txt="인형크기" id="Selectscale"></char-op>
+					<div class="text-center">
+						<div class="btn-group btn-group-sm">
+							<button id="TimeStop" type="button" class="btn btn-secondary btn-sm" @click="TimeStop">정지</button>
+							<button type="button" class="btn btn-primary btn-sm" @click="TurnRole">좌우반전</button>
+							<button type="button" class="btn btn-secondary btn-sm" @click="RemoveRole">인형제거</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" id="customCheck" class="custom-control-input" v-model="isShowFPS">
+			<label class="custom-control-label" for="customCheck">FPS 수치 출력</label>
+		</div>
+		<div class="gameCanvas Canvas mx-auto"></div>
+		<nav class="convasControl clearfix col-12 mt-2">
+			<div class="gameSelectBackground form-inline float-left">
+				<label>배경화면</label>
+				<select class="custom-select-sm" v-model="SelectBackground" @input="changeBackground">
+					<option value="0">없음</option>
+					<option v-for="(img,index) in background" :value="index+1">{{ img }}</option>
+				</select>
+			</div>
+			<div class="btn-group btn-group-sm float-right">
+				<button type="button" class="btn btn-secondary" @click="RemoveAllRole">인형 모두제거</button>
+				<button type="button" class="btn btn-secondary" @click="AllStopRole">인형 모션정지</button>
+				<button type="button" class="btn btn-primary" @click="savePng">이미지 저장하기</button>
+				<button type="button" class="btn btn-primary" @click="saveStage">주소 복사</button>
+			</div>
+		</nav>
+		<img id="saveImage" width="100%">
+		<footer class="mx-auto">
+			<div class="text-muted">
+				<p><small>이것은 단순한 소녀전선 모션 시뮬레이터 이며, 실제 게임과는 다를 수 있습니다.</small></p>
+				<p>모든 이미지 파일에 대한 저작권은 게임 개발사인 <a href="http://gf.txwy.tw/" target="_blank">天下網遊</a> 에 있습니다.</p>
+				<p>Orignal Simulator :
+					<a href="https://github.com/cullus" target="_blank">cullus</a><span class="link-separator">/</span><a href="https://github.com/cullus/gfSpinePiXi" target="_blank">gfSpinePiXi</a>
+				</p>
+				<p>Original GitHub :
+					<a href="https://github.com/wsmwason/gf-spine-simulator" target="_blank">wsmwason/gf-spine-simulator [업데이트 오리지널]</a>
+				</p>
+				<p>Korean translate GitHub :
+					<a href="https://github.com/kjm1922/gf-spine-simulator" target="_blank">kjm1922/gf-spine-simulator [한글화 적용]</a>
+				</p>
+				<p>More Modifty :
+					<a href="https://github.com/ergo9ine">ergo9ine</a><span class="link-separator">/</span><a href="https://github.com/SFDB-Team/gf-spine-simulator" target="_blank">gf-spine-simulator [커스텀]</a>
+				</p>
+			</div>
+		</footer>
 	</div>
-</div>
-</div>
-<div class="gameview col-5">
-<div class="charOptions">
-<char-op txt="인형" id="GameDoll"></char-op>
-<char-op txt="모션" id="GameMotion"></char-op>
-<char-op txt="X축" id="SelectposX"></char-op>
-<char-op txt="Y축" id="SelectposY"></char-op>
-<char-op txt="인형크기" id="Selectscale"></char-op>
-<div class="text-center">
-	<div class="btn-group btn-group-sm">
-		<button id="TimeStop" type="button" class="btn btn-secondary btn-sm" @click="TimeStop">정지</button>
-		<button type="button" class="btn btn-primary btn-sm" @click="TurnRole">좌우반전</button>
-		<button type="button" class="btn btn-secondary btn-sm" @click="RemoveRole">인형제거</button>
-	</div>
-</div>
-</div>
-</div>
-</nav>
-<div class="custom-control custom-checkbox">
-	<input type="checkbox" id="customCheck" class="custom-control-input" v-model="isShowFPS">
-	<label class="custom-control-label" for="customCheck">FPS 수치 출력</label>
-</div>
-<div class="gameCanvas Canvas mx-auto"></div>
-<nav class="convasControl clearfix col-12 mt-2">
-<div class="gameSelectBackground form-inline float-left">
-<label>배경화면</label>
-<select class="custom-select-sm" v-model="SelectBackground" @input="changeBackground">
-	<option value="0">없음</option>
-	<option v-for="(img,index) in background" :value="index+1">{{ img }}</option>
-</select>
-</div>
-<div class="btn-group btn-group-sm float-right">
-<button type="button" class="btn btn-secondary" @click="RemoveAllRole">인형 모두제거</button>
-<button type="button" class="btn btn-secondary" @click="AllStopRole">인형 모션정지</button>
-<button type="button" class="btn btn-primary" @click="savePng">이미지 저장하기</button>
-<button type="button" class="btn btn-primary" @click="saveStage">주소 복사</button>
-</div>
-</nav>
-<img id="saveImage" width="100%">
-<footer class="mx-auto">
-<p class="text-muted"><small>이것은 단순한 소녀전선 모션 시뮬레이터 이며, 실제 게임과는 다를 수 있습니다.</small><br>
-모든 이미지 파일에 대한 저작권은 게임 개발사인 <a href="http://gf.txwy.tw/" target="_blank">天下網遊</a> 에 있습니다.<br>
-Orignal Simulator : <a href="https://github.com/cullus" target="_blank">cullus</a><a href="https://github.com/cullus/gfSpinePiXi" target="_blank">gfSpinePiXi</a><br>
-Original GitHub : <a href="https://github.com/wsmwason/gf-spine-simulator" target="_blank">wsmwason/gf-spine-simulator [업데이트 오리지널]</a><br>
-Korean translate GitHub : <a href="https://github.com/kjm1922/gf-spine-simulator" target="_blank">kjm1922/gf-spine-simulator [한글화 적용]</a><br>
-More Modifty : <a href="https://github.com/ergo9ine">ergo9ine</a><a href="https://github.com/SFDB-Team/gf-spine-simulator" target="_blank">/gf-spine-simulator [커스텀]</a></p>
-</footer>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/pixi.js@4.8.6/dist/pixi.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/pixi-spine@1.0.10/bin/pixi-spine.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.min.js"></script>
-<script src="js/girlsData.js"></script>
-<script src="js/spine-data.js"></script>
-<script src="js/game.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/pixi.js@4.8.6/dist/pixi.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/pixi-spine@1.0.10/bin/pixi-spine.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.6/dist/vue.min.js"></script>
+	<script src="js/girlsData.js"></script>
+	<script src="js/spine-data.js"></script>
+	<script src="js/game.js"></script>
 </body>
 </html>
